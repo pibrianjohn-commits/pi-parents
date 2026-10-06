@@ -3,17 +3,22 @@
   "decimal_places": 10000,
   "include_leading_digit": false,
   "pass_name": "A",
-  "shortest": 2,
+  "shortest": 1,
   "longest": 100,
   "trial_bound": 20000,
   "test": "gcd with primorial, then gmpy2.is_prime"
  },
  "streams": {
   "parent_one": {
-   "primes": 17203,
-   "tested": 364500,
-   "expected": 17423.63891581108,
+   "primes": 21257,
+   "tested": 370581,
+   "expected": 21477.638915811065,
    "by_length": {
+    "1": {
+     "primes": 4054,
+     "tested": 6081,
+     "expected": 4054.0
+    },
     "2": {
      "primes": 2156,
      "tested": 3694,
@@ -512,10 +517,15 @@
    }
   },
   "parent_two": {
-   "primes": 16660,
-   "tested": 347396,
-   "expected": 16623.18708833919,
+   "primes": 20677,
+   "tested": 353336,
+   "expected": 20583.187088339175,
    "by_length": {
+    "1": {
+     "primes": 4017,
+     "tested": 5940,
+     "expected": 3960.0
+    },
     "2": {
      "primes": 2036,
      "tested": 3533,
@@ -1014,10 +1024,15 @@
    }
   },
   "pi": {
-   "primes": 16873,
-   "tested": 354181,
-   "expected": 16934.051473242893,
+   "primes": 20884,
+   "tested": 360232,
+   "expected": 20968.05147324288,
    "by_length": {
+    "1": {
+     "primes": 4011,
+     "tested": 6051,
+     "expected": 4034.0
+    },
     "2": {
      "primes": 2058,
      "tested": 3569,

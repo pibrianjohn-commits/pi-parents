@@ -11,7 +11,7 @@ method and roadmap are in [BRIEF.md](BRIEF.md).
 |---|---|---|
 | 1 | Parents generator | Done. Reproduces every check value. |
 | 2 | Entropy profile | Done: windows of 10, 12, 15, 20, 30 and 50 digits. |
-| 3 | Prime search | Done on the parents and pi: pass A (2-100 digits) and pass B (101-1,000 digits). |
+| 3 | Prime search | Done on the parents and pi: pass A (1-100 digits) and pass B (101-1,000 digits). |
 | 4 | Structure finder | Not started |
 | 5 | Controls and comparison report | Not started |
 | 6 | Launchable app | Not started |
@@ -43,9 +43,10 @@ Decided:
 - Digit streams are decimals only: Parent One's leading "2", Parent Two's "0"
   and pi's "3" are left out.
 - Prime search in two passes, every run from every starting digit: pass A
-  2-100 digits (also for a few hundred random streams later), pass B
+  1-100 digits (also for a few hundred random streams later), pass B
   101-1,000 digits (also for about 20 random streams later). Runs that start
-  with 0 or end in an even digit or 5 are skipped.
+  with 0 or end in an even digit or 5 are skipped, except at length 1, where
+  2, 3, 5 and 7 all count as primes.
 - Results are reported in plain English with the key numbers; no more web
   pages or charts.
 

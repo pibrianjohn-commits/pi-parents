@@ -18,8 +18,9 @@ LOWEST_WINDOWS_LISTED = 10
 
 # Stage 3 prime search, chosen by Brian: every run of these lengths from
 # every starting digit, skipping runs that start with 0 or end in an even
-# digit or 5. Pass A is fast; pass B is the long one.
-PRIME_PASSES = {"A": (2, 100), "B": (101, 1000)}
+# digit or 5. Length 1 is the exception: 2, 3, 5 and 7 all count as primes.
+# Pass A is fast; pass B is the long one.
+PRIME_PASSES = {"A": (1, 100), "B": (101, 1000)}
 
 # Starting digits per saved piece of work. A stopped run resumes from the
 # pieces already saved.

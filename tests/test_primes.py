@@ -24,7 +24,9 @@ def slow_search(digits, lo, hi):
     for s in range(len(digits)):
         for L in range(lo, hi + 1):
             run = digits[s:s + L]
-            if len(run) < L or run[0] == "0" or run[-1] in "024568":
+            if len(run) < L or run[0] == "0":
+                continue
+            if run[-1] in ("0468" if L == 1 else "024568"):
                 continue
             if slow_is_prime(int(run)):
                 found.append((s, L))
@@ -43,8 +45,17 @@ class Search(unittest.TestCase):
     def test_matches_brute_force(self):
         rng = random.Random(7)
         digits = "".join(rng.choice("0123456789") for _ in range(400))
-        got, _, _ = primes.search(digits, range(len(digits)), 2, 9, self.P)
-        self.assertEqual(sorted(got), slow_search(digits, 2, 9))
+        got, _, _ = primes.search(digits, range(len(digits)), 1, 9, self.P)
+        self.assertEqual(sorted(got), slow_search(digits, 1, 9))
+
+    def test_single_digits(self):
+        found, tested, _ = primes.search("0123456789", range(10), 1, 1, self.P)
+        self.assertEqual(sorted(found), [(2, 1), (3, 1), (5, 1), (7, 1)])
+        self.assertEqual(tested, {1: 6})        # 1, 2, 3, 5, 7, 9
+
+    def test_three_nested_in_131(self):
+        found, _, _ = primes.search("131", range(3), 1, 3, self.P)
+        self.assertEqual(sorted(found), [(0, 2), (0, 3), (1, 1), (1, 2)])
 
     def test_pass_split_loses_nothing(self):
         # Two passes over 2..6 and 7..12 find what one pass over 2..12 does.
@@ -70,6 +81,7 @@ class Search(unittest.TestCase):
         self.assertEqual(max(tested), 4)
 
     def test_short_chance_table(self):
+        self.assertAlmostEqual(primes.chance_short(1), 4 / 6)
         for L in (2, 3, 4, 5):
             runs = [n for n in range(10 ** (L - 1), 10 ** L) if n % 10 in (1, 3, 7, 9)]
             share = sum(map(slow_is_prime, runs)) / len(runs)

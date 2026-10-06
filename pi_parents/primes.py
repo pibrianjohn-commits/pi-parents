@@ -2,7 +2,8 @@
 
 From every starting digit, each run of the pass's lengths is read as a whole
 number and tested for primality. Runs that start with 0, or end in an even
-digit or 5, are skipped. Every prime found is recorded as
+digit or 5, are skipped, except that single digits 2 and 5 are tested, so
+that 2, 3, 5 and 7 count as primes at length 1. Every prime found is recorded as
 (stream, start place, length), where place 1 is the first decimal.
 
 Primality: a gcd against the product of the primes up to 20,000 throws out
@@ -37,13 +38,16 @@ PRIMES_BELOW = [0, 4, 25, 168, 1_229, 9_592, 78_498, 664_579]
 
 
 def chance_short(L):
-    """Share of L-digit numbers, not ending in 0, 2, 4, 5, 6 or 8 nor
-    starting with 0, that are prime (exact, for L up to 7)."""
-    primes = PRIMES_BELOW[L] - PRIMES_BELOW[L - 1] - (2 if L == 1 else 0)
+    """Share of the L-digit runs that get tested which are prime (exact,
+    for L up to 7). Single digits tested are 1, 2, 3, 5, 7 and 9; longer
+    runs start with 1-9 and end in 1, 3, 7 or 9."""
+    if L == 1:
+        return 4 / 6
+    primes = PRIMES_BELOW[L] - PRIMES_BELOW[L - 1]
     return primes / (9 * 10 ** (L - 2) * 4)
 
 
-SHORT = {L: chance_short(L) for L in range(2, len(PRIMES_BELOW))}
+SHORT = {L: chance_short(L) for L in range(1, len(PRIMES_BELOW))}
 
 _primorial = None
 _streams = None
@@ -89,13 +93,14 @@ def search(digits, starts, lo, hi, P=None):
         for L in range(lo, top + 1):
             c = digits[s + L - 1]
             v = v * 10 + (ord(c) - 48)
-            if c in "024568":
+            if c in ("0468" if L == 1 else "024568"):
                 continue
             tested[L] = tested.get(L, 0) + 1
             # A number not divisible by 2 or 5 is prime with chance
             # about 2.5 / ln(value); exact shares for short runs.
-            expected[L] = expected.get(L, 0.0) + SHORT.get(
-                L, 2.5 / ((L - 1) * LN10 + ln_lead))
+            chance = (SHORT[L] if L in SHORT
+                      else 2.5 / ((L - 1) * LN10 + ln_lead))
+            expected[L] = expected.get(L, 0.0) + chance
             if is_prime(v, P):
                 primes.append((s, L))
     return primes, tested, expected
@@ -209,6 +214,7 @@ def run(passes=("A", "B"), stream_set=None, tag=None, cores=None):
     for pass_name in passes:         # nothing was left to do
         if not (base / f"summary_pass_{pass_name}.json").exists():
             merge(stream_set, pass_name, base)
+    log.close()
     return base
 
 
