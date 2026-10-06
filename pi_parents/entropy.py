@@ -72,29 +72,49 @@ def summarise(profile, digits, first_place, W, listed):
     )
 
 
-def run(W=None, include_leading_digit=None, D=None):
-    W = settings.ENTROPY_WINDOW if W is None else W
+def max_entropy(W):
+    """The most entropy a W-digit window can have: digits spread as evenly
+    as possible over all ten."""
+    q, r = divmod(W, 10)
+    counts = [q + 1] * r + [q] * (10 - r)
+    return -sum(c / W * math.log2(c / W) for c in counts if c)
+
+
+def run(windows=None, include_leading_digit=None, D=None, stream_set=None):
+    """Entropy profiles at every window size, for every stream.
+
+    stream_set maps a stream name to (digits, first place); by default it
+    is Parent One, Parent Two and pi.
+    """
+    windows = settings.ENTROPY_WINDOWS if windows is None else tuple(windows)
     if include_leading_digit is None:
         include_leading_digit = settings.INCLUDE_LEADING_DIGIT
     D = settings.DECIMAL_PLACES if D is None else D
+    if stream_set is None:
+        stream_set = streams.load_streams(D, include_leading_digit)
     lead = "with_lead" if include_leading_digit else "decimals_only"
-    out_dir = RESULTS_DIR / f"D{D}_W{W}_{lead}"
+    out_dir = RESULTS_DIR / f"D{D}_{lead}"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    run_settings = dict(decimal_places=D, entropy_window=W,
+    run_settings = dict(decimal_places=D, entropy_windows=list(windows),
                         include_leading_digit=include_leading_digit)
-    summary = dict(settings=run_settings, streams={})
+    summary = dict(settings=run_settings, windows={})
     profiles = {}
-    for name, (digits, first_place) in streams.load_streams(
-            D, include_leading_digit).items():
-        prof = entropy_profile(digits, W)
-        profiles[name] = (prof, first_place)
-        summary["streams"][name] = summarise(
-            prof, digits, first_place, W, settings.LOWEST_WINDOWS_LISTED)
-        with open(out_dir / f"entropy_{name}.csv", "w", newline="") as f:
-            w = csv.writer(f)
-            w.writerow(["window_start_place", "entropy_bits"])
-            w.writerows((first_place + i, f"{h:.6f}") for i, h in enumerate(prof))
+    for W in windows:
+        profiles[W] = {}
+        summary["windows"][str(W)] = dict(most_possible=max_entropy(W),
+                                          streams={})
+        for name, (digits, first_place) in stream_set.items():
+            prof = entropy_profile(digits, W)
+            profiles[W][name] = (prof, first_place)
+            summary["windows"][str(W)]["streams"][name] = summarise(
+                prof, digits, first_place, W, settings.LOWEST_WINDOWS_LISTED)
+            with open(out_dir / f"entropy_W{W}_{name}.csv", "w",
+                      newline="") as f:
+                w = csv.writer(f)
+                w.writerow(["window_start_place", "entropy_bits"])
+                w.writerows((first_place + i, f"{h:.6f}")
+                            for i, h in enumerate(prof))
 
     (out_dir / "summary.json").write_text(json.dumps(summary, indent=2) + "\n")
     from . import entropy_page
@@ -104,20 +124,20 @@ def run(W=None, include_leading_digit=None, D=None):
 
 def report(summary):
     s = summary["settings"]
-    lines = [f"window {s['entropy_window']} digits, "
-             f"{'leading digit included' if s['include_leading_digit'] else 'decimals only'}, "
-             f"{s['decimal_places']:,} places"]
-    for name, st in summary["streams"].items():
-        low = st["lowest_windows"][0]
-        lines.append(
-            f"{streams.STREAM_NAMES[name]:<11} mean {st['mean']:.4f}  "
-            f"sd {st['stdev']:.4f}  min {st['minimum']:.4f} "
-            f"(place {low['start_place']:,})  max {st['maximum']:.4f}")
+    names = list(next(iter(summary["windows"].values()))["streams"])
+    lines = [f"{'leading digit included' if s['include_leading_digit'] else 'decimals only'}, "
+             f"{s['decimal_places']:,} places; average / lowest entropy in bits",
+             "window  most  " + "".join(
+                 f"{streams.STREAM_NAMES.get(n, n):>20}" for n in names)]
+    for W, ws in summary["windows"].items():
+        lines.append(f"{W:>6}  {ws['most_possible']:.3f}" + "".join(
+            f"{st['mean']:>12.4f} / {st['minimum']:.3f}"
+            for st in ws["streams"].values()))
     return "\n".join(lines)
 
 
 if __name__ == "__main__":
-    W = int(sys.argv[1]) if len(sys.argv) > 1 else None
-    out_dir, summary = run(W)
+    windows = [int(a) for a in sys.argv[1:]] or None
+    out_dir, summary = run(windows)
     print(report(summary))
     print("saved", out_dir.relative_to(RESULTS_DIR.parent.parent))

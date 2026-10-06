@@ -36,6 +36,27 @@ class Profile(unittest.TestCase):
                     h, entropy.window_entropy(digits[i:i + 50]), places=9,
                     msg=f"{name} window {i}")
 
+    def test_most_possible(self):
+        self.assertAlmostEqual(entropy.max_entropy(10), math.log2(10))
+        self.assertAlmostEqual(entropy.max_entropy(20), math.log2(10))
+        # 12 digits: two digits appear twice, eight appear once.
+        self.assertAlmostEqual(entropy.max_entropy(12),
+                               entropy.window_entropy("001123456789"))
+        for W in (10, 12, 15, 20, 30, 50):
+            rng = random.Random(W)
+            digits = "".join(rng.choice("0123456789") for _ in range(2_000))
+            self.assertLessEqual(max(entropy.entropy_profile(digits, W)),
+                                 entropy.max_entropy(W) + 1e-12)
+
+    def test_every_chosen_size_matches_direct_count(self):
+        digits = streams.load_streams(10_000, False)["parent_two"][0]
+        for W in (10, 12, 15, 20, 30, 50):
+            prof = entropy.entropy_profile(digits, W)
+            self.assertEqual(len(prof), 10_001 - W)
+            for i in range(0, len(prof), 13):
+                self.assertAlmostEqual(
+                    prof[i], entropy.window_entropy(digits[i:i + W]), places=9)
+
     def test_window_too_long(self):
         with self.assertRaises(ValueError):
             entropy.entropy_profile("123", 4)

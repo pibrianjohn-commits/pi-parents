@@ -6,8 +6,9 @@ settings it was made with.
 
 DECIMAL_PLACES = 10_000
 
-# OPEN: entropy window size, in digits. 50 is the first-pass value.
-ENTROPY_WINDOW = 50
+# Entropy window sizes, in digits, each slid one digit at a time.
+# Chosen by Brian; every size is run and reported side by side.
+ENTROPY_WINDOWS = (10, 12, 15, 20, 30, 50)
 
 # OPEN: does Parent One's digit stream start with its leading "2", or only
 # with its decimals? The same choice applies to pi's leading "3".

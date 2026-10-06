@@ -10,7 +10,7 @@ method and roadmap are in [BRIEF.md](BRIEF.md).
 | Stage | | Status |
 |---|---|---|
 | 1 | Parents generator | Done. Reproduces every check value. |
-| 2 | Entropy profile | Done. Window size and leading digit are still open settings. |
+| 2 | Entropy profile | Done: windows of 10, 12, 15, 20, 30 and 50 digits. Leading digit still open. |
 | 3 | Prime search | Not started |
 | 4 | Structure finder | Not started |
 | 5 | Controls and comparison report | Not started |
@@ -21,15 +21,22 @@ method and roadmap are in [BRIEF.md](BRIEF.md).
 
 - `data/parent_one_10000.txt`, `data/parent_two_10000.txt`, `data/pi_10000.txt`:
   the numbers to 10,000 places.
-- `results/stage2/D10000_W50_decimals_only/entropy.html`: the entropy
-  profile. Open it in a web browser.
+- `results/stage2/D10000_decimals_only/entropy.html`: the entropy
+  profiles at every window size, side by side. Open it in a web browser.
 
-## Settings still to confirm
+## Settings
 
-These are in `pi_parents/settings.py`, and every result folder is named after
-the settings that made it.
+These are in `pi_parents/settings.py`, and every result records the settings
+that made it.
 
-- Entropy window size: currently 50 digits, the first-pass value.
+Decided:
+
+- Entropy windows of 10, 12, 15, 20, 30 and 50 digits, each sliding one digit
+  at a time, on Parent One, Parent Two and pi. The controls get the same sizes
+  in Stage 5, and all sizes are reported side by side.
+
+Still to confirm:
+
 - Whether Parent One's stream starts with its leading "2" (and pi's with its
   "3"): currently decimals only. Parent Two's leading "0" is never included.
 - Shortest and longest prime run lengths (Stage 3).
@@ -41,6 +48,6 @@ Python 3, standard library only so far.
 
 ```sh
 python3 -m pi_parents.parents          # Stage 1: regenerate data/
-python3 -m pi_parents.entropy [WINDOW] # Stage 2: entropy profile into results/
+python3 -m pi_parents.entropy [SIZES..] # Stage 2: entropy profiles into results/
 python3 -m unittest discover -s tests -t .
 ```
