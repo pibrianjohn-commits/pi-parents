@@ -1,7 +1,6 @@
 """Settings Brian chooses. Each one marked OPEN is still to be confirmed.
 
-The values here are starting points only. Every result file records the
-settings it was made with.
+Every result file records the settings it was made with.
 """
 
 DECIMAL_PLACES = 10_000
@@ -10,10 +9,18 @@ DECIMAL_PLACES = 10_000
 # Chosen by Brian; every size is run and reported side by side.
 ENTROPY_WINDOWS = (10, 12, 15, 20, 30, 50)
 
-# OPEN: does Parent One's digit stream start with its leading "2", or only
-# with its decimals? The same choice applies to pi's leading "3".
-# Parent Two's leading "0" is never included.
+# Digit streams are decimals only: Parent One's leading "2", Parent Two's
+# "0" and pi's "3" are left out. Chosen by Brian.
 INCLUDE_LEADING_DIGIT = False
 
 # How many of the lowest-entropy windows to list in the Stage 2 report.
 LOWEST_WINDOWS_LISTED = 10
+
+# Stage 3 prime search, chosen by Brian: every run of these lengths from
+# every starting digit, skipping runs that start with 0 or end in an even
+# digit or 5. Pass A is fast; pass B is the long one.
+PRIME_PASSES = {"A": (2, 100), "B": (101, 1000)}
+
+# Starting digits per saved piece of work. A stopped run resumes from the
+# pieces already saved.
+PRIME_CHUNK_STARTS = {"A": 500, "B": 50}

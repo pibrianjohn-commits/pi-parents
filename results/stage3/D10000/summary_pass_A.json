@@ -1,0 +1,1519 @@
+{
+ "settings": {
+  "decimal_places": 10000,
+  "include_leading_digit": false,
+  "pass_name": "A",
+  "shortest": 2,
+  "longest": 100,
+  "trial_bound": 20000,
+  "test": "gcd with primorial, then gmpy2.is_prime"
+ },
+ "streams": {
+  "parent_one": {
+   "primes": 17203,
+   "tested": 364500,
+   "expected": 17423.63891581108,
+   "by_length": {
+    "2": {
+     "primes": 2156,
+     "tested": 3694,
+     "expected": 2154.833
+    },
+    "3": {
+     "primes": 1428,
+     "tested": 3693,
+     "expected": 1466.942
+    },
+    "4": {
+     "primes": 1094,
+     "tested": 3699,
+     "expected": 1090.177
+    },
+    "5": {
+     "primes": 852,
+     "tested": 3688,
+     "expected": 856.743
+    },
+    "6": {
+     "primes": 690,
+     "tested": 3716,
+     "expected": 711.263
+    },
+    "7": {
+     "primes": 581,
+     "tested": 3669,
+     "expected": 597.314
+    },
+    "8": {
+     "primes": 502,
+     "tested": 3695,
+     "expected": 523.665
+    },
+    "9": {
+     "primes": 482,
+     "tested": 3679,
+     "expected": 461.06
+    },
+    "10": {
+     "primes": 424,
+     "tested": 3679,
+     "expected": 413.318
+    },
+    "11": {
+     "primes": 370,
+     "tested": 3668,
+     "expected": 373.219
+    },
+    "12": {
+     "primes": 346,
+     "tested": 3691,
+     "expected": 343.304
+    },
+    "13": {
+     "primes": 329,
+     "tested": 3681,
+     "expected": 315.426
+    },
+    "14": {
+     "primes": 296,
+     "tested": 3707,
+     "expected": 294.483
+    },
+    "15": {
+     "primes": 254,
+     "tested": 3677,
+     "expected": 272.112
+    },
+    "16": {
+     "primes": 264,
+     "tested": 3676,
+     "expected": 254.708
+    },
+    "17": {
+     "primes": 244,
+     "tested": 3710,
+     "expected": 241.594
+    },
+    "18": {
+     "primes": 235,
+     "tested": 3701,
+     "expected": 227.391
+    },
+    "19": {
+     "primes": 214,
+     "tested": 3718,
+     "expected": 216.149
+    },
+    "20": {
+     "primes": 219,
+     "tested": 3698,
+     "expected": 204.089
+    },
+    "21": {
+     "primes": 207,
+     "tested": 3690,
+     "expected": 193.825
+    },
+    "22": {
+     "primes": 178,
+     "tested": 3688,
+     "expected": 184.817
+    },
+    "23": {
+     "primes": 186,
+     "tested": 3667,
+     "expected": 175.631
+    },
+    "24": {
+     "primes": 155,
+     "tested": 3691,
+     "expected": 169.282
+    },
+    "25": {
+     "primes": 168,
+     "tested": 3673,
+     "expected": 161.654
+    },
+    "26": {
+     "primes": 181,
+     "tested": 3702,
+     "expected": 156.596
+    },
+    "27": {
+     "primes": 140,
+     "tested": 3663,
+     "expected": 149.118
+    },
+    "28": {
+     "primes": 156,
+     "tested": 3671,
+     "expected": 144.017
+    },
+    "29": {
+     "primes": 146,
+     "tested": 3694,
+     "expected": 139.91
+    },
+    "30": {
+     "primes": 132,
+     "tested": 3673,
+     "expected": 134.4
+    },
+    "31": {
+     "primes": 123,
+     "tested": 3717,
+     "expected": 131.572
+    },
+    "32": {
+     "primes": 116,
+     "tested": 3677,
+     "expected": 126.049
+    },
+    "33": {
+     "primes": 124,
+     "tested": 3704,
+     "expected": 123.083
+    },
+    "34": {
+     "primes": 116,
+     "tested": 3709,
+     "expected": 119.582
+    },
+    "35": {
+     "primes": 100,
+     "tested": 3685,
+     "expected": 115.398
+    },
+    "36": {
+     "primes": 98,
+     "tested": 3661,
+     "expected": 111.411
+    },
+    "37": {
+     "primes": 102,
+     "tested": 3703,
+     "expected": 109.64
+    },
+    "38": {
+     "primes": 109,
+     "tested": 3716,
+     "expected": 107.099
+    },
+    "39": {
+     "primes": 121,
+     "tested": 3692,
+     "expected": 103.665
+    },
+    "40": {
+     "primes": 98,
+     "tested": 3669,
+     "expected": 100.399
+    },
+    "41": {
+     "primes": 89,
+     "tested": 3683,
+     "expected": 98.306
+    },
+    "42": {
+     "primes": 102,
+     "tested": 3677,
+     "expected": 95.807
+    },
+    "43": {
+     "primes": 86,
+     "tested": 3701,
+     "expected": 94.173
+    },
+    "44": {
+     "primes": 84,
+     "tested": 3682,
+     "expected": 91.532
+    },
+    "45": {
+     "primes": 84,
+     "tested": 3678,
+     "expected": 89.394
+    },
+    "46": {
+     "primes": 73,
+     "tested": 3685,
+     "expected": 87.596
+    },
+    "47": {
+     "primes": 85,
+     "tested": 3697,
+     "expected": 85.995
+    },
+    "48": {
+     "primes": 87,
+     "tested": 3668,
+     "expected": 83.538
+    },
+    "49": {
+     "primes": 69,
+     "tested": 3671,
+     "expected": 81.894
+    },
+    "50": {
+     "primes": 64,
+     "tested": 3705,
+     "expected": 80.983
+    },
+    "51": {
+     "primes": 81,
+     "tested": 3662,
+     "expected": 78.457
+    },
+    "52": {
+     "primes": 80,
+     "tested": 3685,
+     "expected": 77.435
+    },
+    "53": {
+     "primes": 88,
+     "tested": 3709,
+     "expected": 76.446
+    },
+    "54": {
+     "primes": 74,
+     "tested": 3665,
+     "expected": 74.138
+    },
+    "55": {
+     "primes": 58,
+     "tested": 3684,
+     "expected": 73.164
+    },
+    "56": {
+     "primes": 66,
+     "tested": 3701,
+     "expected": 72.171
+    },
+    "57": {
+     "primes": 70,
+     "tested": 3676,
+     "expected": 70.42
+    },
+    "58": {
+     "primes": 64,
+     "tested": 3673,
+     "expected": 69.15
+    },
+    "59": {
+     "primes": 69,
+     "tested": 3660,
+     "expected": 67.725
+    },
+    "60": {
+     "primes": 59,
+     "tested": 3688,
+     "expected": 67.096
+    },
+    "61": {
+     "primes": 52,
+     "tested": 3687,
+     "expected": 65.974
+    },
+    "62": {
+     "primes": 66,
+     "tested": 3686,
+     "expected": 64.892
+    },
+    "63": {
+     "primes": 68,
+     "tested": 3685,
+     "expected": 63.843
+    },
+    "64": {
+     "primes": 70,
+     "tested": 3661,
+     "expected": 62.424
+    },
+    "65": {
+     "primes": 61,
+     "tested": 3678,
+     "expected": 61.746
+    },
+    "66": {
+     "primes": 55,
+     "tested": 3670,
+     "expected": 60.673
+    },
+    "67": {
+     "primes": 48,
+     "tested": 3666,
+     "expected": 59.701
+    },
+    "68": {
+     "primes": 44,
+     "tested": 3681,
+     "expected": 59.059
+    },
+    "69": {
+     "primes": 55,
+     "tested": 3686,
+     "expected": 58.272
+    },
+    "70": {
+     "primes": 65,
+     "tested": 3673,
+     "expected": 57.239
+    },
+    "71": {
+     "primes": 49,
+     "tested": 3681,
+     "expected": 56.549
+    },
+    "72": {
+     "primes": 50,
+     "tested": 3655,
+     "expected": 55.365
+    },
+    "73": {
+     "primes": 45,
+     "tested": 3681,
+     "expected": 54.992
+    },
+    "74": {
+     "primes": 47,
+     "tested": 3676,
+     "expected": 54.173
+    },
+    "75": {
+     "primes": 51,
+     "tested": 3667,
+     "expected": 53.316
+    },
+    "76": {
+     "primes": 54,
+     "tested": 3665,
+     "expected": 52.586
+    },
+    "77": {
+     "primes": 57,
+     "tested": 3682,
+     "expected": 52.14
+    },
+    "78": {
+     "primes": 55,
+     "tested": 3660,
+     "expected": 51.16
+    },
+    "79": {
+     "primes": 42,
+     "tested": 3682,
+     "expected": 50.812
+    },
+    "80": {
+     "primes": 45,
+     "tested": 3687,
+     "expected": 50.243
+    },
+    "81": {
+     "primes": 59,
+     "tested": 3683,
+     "expected": 49.565
+    },
+    "82": {
+     "primes": 46,
+     "tested": 3642,
+     "expected": 48.415
+    },
+    "83": {
+     "primes": 42,
+     "tested": 3680,
+     "expected": 48.331
+    },
+    "84": {
+     "primes": 42,
+     "tested": 3659,
+     "expected": 47.477
+    },
+    "85": {
+     "primes": 40,
+     "tested": 3687,
+     "expected": 47.276
+    },
+    "86": {
+     "primes": 45,
+     "tested": 3673,
+     "expected": 46.55
+    },
+    "87": {
+     "primes": 40,
+     "tested": 3682,
+     "expected": 46.124
+    },
+    "88": {
+     "primes": 37,
+     "tested": 3674,
+     "expected": 45.499
+    },
+    "89": {
+     "primes": 53,
+     "tested": 3686,
+     "expected": 45.132
+    },
+    "90": {
+     "primes": 47,
+     "tested": 3658,
+     "expected": 44.29
+    },
+    "91": {
+     "primes": 37,
+     "tested": 3685,
+     "expected": 44.126
+    },
+    "92": {
+     "primes": 54,
+     "tested": 3689,
+     "expected": 43.691
+    },
+    "93": {
+     "primes": 41,
+     "tested": 3656,
+     "expected": 42.833
+    },
+    "94": {
+     "primes": 41,
+     "tested": 3680,
+     "expected": 42.653
+    },
+    "95": {
+     "primes": 39,
+     "tested": 3680,
+     "expected": 42.2
+    },
+    "96": {
+     "primes": 32,
+     "tested": 3705,
+     "expected": 42.047
+    },
+    "97": {
+     "primes": 40,
+     "tested": 3644,
+     "expected": 40.927
+    },
+    "98": {
+     "primes": 42,
+     "tested": 3667,
+     "expected": 40.763
+    },
+    "99": {
+     "primes": 30,
+     "tested": 3689,
+     "expected": 40.593
+    },
+    "100": {
+     "primes": 49,
+     "tested": 3638,
+     "expected": 39.63
+    }
+   }
+  },
+  "parent_two": {
+   "primes": 16660,
+   "tested": 347396,
+   "expected": 16623.18708833919,
+   "by_length": {
+    "2": {
+     "primes": 2036,
+     "tested": 3533,
+     "expected": 2060.917
+    },
+    "3": {
+     "primes": 1428,
+     "tested": 3538,
+     "expected": 1405.372
+    },
+    "4": {
+     "primes": 1053,
+     "tested": 3533,
+     "expected": 1041.254
+    },
+    "5": {
+     "primes": 844,
+     "tested": 3521,
+     "expected": 817.948
+    },
+    "6": {
+     "primes": 662,
+     "tested": 3523,
+     "expected": 674.322
+    },
+    "7": {
+     "primes": 529,
+     "tested": 3490,
+     "expected": 568.173
+    },
+    "8": {
+     "primes": 523,
+     "tested": 3541,
+     "expected": 501.454
+    },
+    "9": {
+     "primes": 441,
+     "tested": 3525,
+     "expected": 441.554
+    },
+    "10": {
+     "primes": 381,
+     "tested": 3527,
+     "expected": 396.099
+    },
+    "11": {
+     "primes": 354,
+     "tested": 3524,
+     "expected": 358.677
+    },
+    "12": {
+     "primes": 316,
+     "tested": 3546,
+     "expected": 329.815
+    },
+    "13": {
+     "primes": 281,
+     "tested": 3522,
+     "expected": 301.634
+    },
+    "14": {
+     "primes": 273,
+     "tested": 3487,
+     "expected": 276.707
+    },
+    "15": {
+     "primes": 252,
+     "tested": 3520,
+     "expected": 260.424
+    },
+    "16": {
+     "primes": 235,
+     "tested": 3501,
+     "expected": 242.519
+    },
+    "17": {
+     "primes": 229,
+     "tested": 3505,
+     "expected": 228.163
+    },
+    "18": {
+     "primes": 217,
+     "tested": 3527,
+     "expected": 216.686
+    },
+    "19": {
+     "primes": 211,
+     "tested": 3517,
+     "expected": 204.449
+    },
+    "20": {
+     "primes": 183,
+     "tested": 3521,
+     "expected": 194.281
+    },
+    "21": {
+     "primes": 173,
+     "tested": 3514,
+     "expected": 184.464
+    },
+    "22": {
+     "primes": 155,
+     "tested": 3510,
+     "expected": 175.833
+    },
+    "23": {
+     "primes": 160,
+     "tested": 3514,
+     "expected": 168.22
+    },
+    "24": {
+     "primes": 185,
+     "tested": 3528,
+     "expected": 161.82
+    },
+    "25": {
+     "primes": 154,
+     "tested": 3491,
+     "expected": 153.584
+    },
+    "26": {
+     "primes": 143,
+     "tested": 3525,
+     "expected": 149.063
+    },
+    "27": {
+     "primes": 152,
+     "tested": 3534,
+     "expected": 143.814
+    },
+    "28": {
+     "primes": 139,
+     "tested": 3517,
+     "expected": 137.973
+    },
+    "29": {
+     "primes": 137,
+     "tested": 3498,
+     "expected": 132.414
+    },
+    "30": {
+     "primes": 122,
+     "tested": 3506,
+     "expected": 128.229
+    },
+    "31": {
+     "primes": 129,
+     "tested": 3543,
+     "expected": 125.409
+    },
+    "32": {
+     "primes": 149,
+     "tested": 3500,
+     "expected": 119.981
+    },
+    "33": {
+     "primes": 118,
+     "tested": 3511,
+     "expected": 116.662
+    },
+    "34": {
+     "primes": 131,
+     "tested": 3491,
+     "expected": 112.552
+    },
+    "35": {
+     "primes": 107,
+     "tested": 3477,
+     "expected": 108.848
+    },
+    "36": {
+     "primes": 103,
+     "tested": 3488,
+     "expected": 106.149
+    },
+    "37": {
+     "primes": 103,
+     "tested": 3490,
+     "expected": 103.313
+    },
+    "38": {
+     "primes": 96,
+     "tested": 3514,
+     "expected": 101.257
+    },
+    "39": {
+     "primes": 116,
+     "tested": 3515,
+     "expected": 98.67
+    },
+    "40": {
+     "primes": 96,
+     "tested": 3498,
+     "expected": 95.727
+    },
+    "41": {
+     "primes": 91,
+     "tested": 3502,
+     "expected": 93.462
+    },
+    "42": {
+     "primes": 94,
+     "tested": 3498,
+     "expected": 91.126
+    },
+    "43": {
+     "primes": 92,
+     "tested": 3520,
+     "expected": 89.556
+    },
+    "44": {
+     "primes": 101,
+     "tested": 3507,
+     "expected": 87.164
+    },
+    "45": {
+     "primes": 78,
+     "tested": 3529,
+     "expected": 85.756
+    },
+    "46": {
+     "primes": 93,
+     "tested": 3532,
+     "expected": 83.958
+    },
+    "47": {
+     "primes": 78,
+     "tested": 3486,
+     "expected": 81.086
+    },
+    "48": {
+     "primes": 98,
+     "tested": 3510,
+     "expected": 79.929
+    },
+    "49": {
+     "primes": 82,
+     "tested": 3520,
+     "expected": 78.513
+    },
+    "50": {
+     "primes": 77,
+     "tested": 3510,
+     "expected": 76.716
+    },
+    "51": {
+     "primes": 87,
+     "tested": 3515,
+     "expected": 75.307
+    },
+    "52": {
+     "primes": 72,
+     "tested": 3504,
+     "expected": 73.62
+    },
+    "53": {
+     "primes": 61,
+     "tested": 3512,
+     "expected": 72.383
+    },
+    "54": {
+     "primes": 76,
+     "tested": 3516,
+     "expected": 71.117
+    },
+    "55": {
+     "primes": 77,
+     "tested": 3505,
+     "expected": 69.605
+    },
+    "56": {
+     "primes": 68,
+     "tested": 3510,
+     "expected": 68.441
+    },
+    "57": {
+     "primes": 55,
+     "tested": 3528,
+     "expected": 67.579
+    },
+    "58": {
+     "primes": 78,
+     "tested": 3512,
+     "expected": 66.112
+    },
+    "59": {
+     "primes": 48,
+     "tested": 3496,
+     "expected": 64.689
+    },
+    "60": {
+     "primes": 63,
+     "tested": 3528,
+     "expected": 64.186
+    },
+    "61": {
+     "primes": 72,
+     "tested": 3529,
+     "expected": 63.145
+    },
+    "62": {
+     "primes": 61,
+     "tested": 3506,
+     "expected": 61.712
+    },
+    "63": {
+     "primes": 48,
+     "tested": 3552,
+     "expected": 61.526
+    },
+    "64": {
+     "primes": 57,
+     "tested": 3471,
+     "expected": 59.181
+    },
+    "65": {
+     "primes": 76,
+     "tested": 3496,
+     "expected": 58.688
+    },
+    "66": {
+     "primes": 51,
+     "tested": 3508,
+     "expected": 57.993
+    },
+    "67": {
+     "primes": 52,
+     "tested": 3534,
+     "expected": 57.543
+    },
+    "68": {
+     "primes": 45,
+     "tested": 3491,
+     "expected": 56.003
+    },
+    "69": {
+     "primes": 54,
+     "tested": 3509,
+     "expected": 55.471
+    },
+    "70": {
+     "primes": 62,
+     "tested": 3530,
+     "expected": 55.001
+    },
+    "71": {
+     "primes": 47,
+     "tested": 3512,
+     "expected": 53.947
+    },
+    "72": {
+     "primes": 54,
+     "tested": 3509,
+     "expected": 53.15
+    },
+    "73": {
+     "primes": 49,
+     "tested": 3510,
+     "expected": 52.435
+    },
+    "74": {
+     "primes": 52,
+     "tested": 3488,
+     "expected": 51.398
+    },
+    "75": {
+     "primes": 48,
+     "tested": 3482,
+     "expected": 50.623
+    },
+    "76": {
+     "primes": 59,
+     "tested": 3496,
+     "expected": 50.155
+    },
+    "77": {
+     "primes": 53,
+     "tested": 3536,
+     "expected": 50.068
+    },
+    "78": {
+     "primes": 42,
+     "tested": 3494,
+     "expected": 48.837
+    },
+    "79": {
+     "primes": 47,
+     "tested": 3500,
+     "expected": 48.303
+    },
+    "80": {
+     "primes": 50,
+     "tested": 3498,
+     "expected": 47.671
+    },
+    "81": {
+     "primes": 50,
+     "tested": 3512,
+     "expected": 47.261
+    },
+    "82": {
+     "primes": 45,
+     "tested": 3508,
+     "expected": 46.63
+    },
+    "83": {
+     "primes": 53,
+     "tested": 3479,
+     "expected": 45.684
+    },
+    "84": {
+     "primes": 57,
+     "tested": 3531,
+     "expected": 45.814
+    },
+    "85": {
+     "primes": 51,
+     "tested": 3493,
+     "expected": 44.784
+    },
+    "86": {
+     "primes": 36,
+     "tested": 3494,
+     "expected": 44.275
+    },
+    "87": {
+     "primes": 42,
+     "tested": 3507,
+     "expected": 43.929
+    },
+    "88": {
+     "primes": 43,
+     "tested": 3488,
+     "expected": 43.191
+    },
+    "89": {
+     "primes": 52,
+     "tested": 3531,
+     "expected": 43.232
+    },
+    "90": {
+     "primes": 38,
+     "tested": 3491,
+     "expected": 42.266
+    },
+    "91": {
+     "primes": 51,
+     "tested": 3496,
+     "expected": 41.86
+    },
+    "92": {
+     "primes": 41,
+     "tested": 3491,
+     "expected": 41.341
+    },
+    "93": {
+     "primes": 47,
+     "tested": 3491,
+     "expected": 40.897
+    },
+    "94": {
+     "primes": 48,
+     "tested": 3482,
+     "expected": 40.36
+    },
+    "95": {
+     "primes": 32,
+     "tested": 3471,
+     "expected": 39.806
+    },
+    "96": {
+     "primes": 45,
+     "tested": 3492,
+     "expected": 39.625
+    },
+    "97": {
+     "primes": 49,
+     "tested": 3491,
+     "expected": 39.204
+    },
+    "98": {
+     "primes": 37,
+     "tested": 3505,
+     "expected": 38.96
+    },
+    "99": {
+     "primes": 33,
+     "tested": 3488,
+     "expected": 38.375
+    },
+    "100": {
+     "primes": 46,
+     "tested": 3499,
+     "expected": 38.111
+    }
+   }
+  },
+  "pi": {
+   "primes": 16873,
+   "tested": 354181,
+   "expected": 16934.051473242893,
+   "by_length": {
+    "2": {
+     "primes": 2058,
+     "tested": 3569,
+     "expected": 2081.917
+    },
+    "3": {
+     "primes": 1383,
+     "tested": 3574,
+     "expected": 1419.672
+    },
+    "4": {
+     "primes": 1028,
+     "tested": 3600,
+     "expected": 1061.0
+    },
+    "5": {
+     "primes": 850,
+     "tested": 3600,
+     "expected": 836.3
+    },
+    "6": {
+     "primes": 660,
+     "tested": 3612,
+     "expected": 691.357
+    },
+    "7": {
+     "primes": 628,
+     "tested": 3591,
+     "expected": 584.616
+    },
+    "8": {
+     "primes": 526,
+     "tested": 3590,
+     "expected": 508.433
+    },
+    "9": {
+     "primes": 456,
+     "tested": 3612,
+     "expected": 452.55
+    },
+    "10": {
+     "primes": 435,
+     "tested": 3603,
+     "expected": 404.715
+    },
+    "11": {
+     "primes": 373,
+     "tested": 3593,
+     "expected": 365.554
+    },
+    "12": {
+     "primes": 368,
+     "tested": 3588,
+     "expected": 333.903
+    },
+    "13": {
+     "primes": 293,
+     "tested": 3602,
+     "expected": 308.765
+    },
+    "14": {
+     "primes": 284,
+     "tested": 3587,
+     "expected": 284.819
+    },
+    "15": {
+     "primes": 264,
+     "tested": 3583,
+     "expected": 265.234
+    },
+    "16": {
+     "primes": 255,
+     "tested": 3586,
+     "expected": 248.451
+    },
+    "17": {
+     "primes": 266,
+     "tested": 3584,
+     "expected": 233.398
+    },
+    "18": {
+     "primes": 223,
+     "tested": 3592,
+     "expected": 220.732
+    },
+    "19": {
+     "primes": 205,
+     "tested": 3594,
+     "expected": 209.035
+    },
+    "20": {
+     "primes": 205,
+     "tested": 3598,
+     "expected": 198.543
+    },
+    "21": {
+     "primes": 185,
+     "tested": 3596,
+     "expected": 188.914
+    },
+    "22": {
+     "primes": 169,
+     "tested": 3599,
+     "expected": 180.327
+    },
+    "23": {
+     "primes": 184,
+     "tested": 3594,
+     "expected": 172.101
+    },
+    "24": {
+     "primes": 154,
+     "tested": 3545,
+     "expected": 162.606
+    },
+    "25": {
+     "primes": 151,
+     "tested": 3590,
+     "expected": 157.971
+    },
+    "26": {
+     "primes": 167,
+     "tested": 3587,
+     "expected": 151.652
+    },
+    "27": {
+     "primes": 140,
+     "tested": 3585,
+     "expected": 145.942
+    },
+    "28": {
+     "primes": 125,
+     "tested": 3586,
+     "expected": 140.689
+    },
+    "29": {
+     "primes": 142,
+     "tested": 3576,
+     "expected": 135.436
+    },
+    "30": {
+     "primes": 145,
+     "tested": 3601,
+     "expected": 131.776
+    },
+    "31": {
+     "primes": 124,
+     "tested": 3583,
+     "expected": 126.848
+    },
+    "32": {
+     "primes": 123,
+     "tested": 3604,
+     "expected": 123.572
+    },
+    "33": {
+     "primes": 119,
+     "tested": 3567,
+     "expected": 118.533
+    },
+    "34": {
+     "primes": 97,
+     "tested": 3595,
+     "expected": 115.938
+    },
+    "35": {
+     "primes": 107,
+     "tested": 3581,
+     "expected": 112.145
+    },
+    "36": {
+     "primes": 109,
+     "tested": 3570,
+     "expected": 108.67
+    },
+    "37": {
+     "primes": 106,
+     "tested": 3580,
+     "expected": 106.003
+    },
+    "38": {
+     "primes": 101,
+     "tested": 3584,
+     "expected": 103.304
+    },
+    "39": {
+     "primes": 99,
+     "tested": 3585,
+     "expected": 100.657
+    },
+    "40": {
+     "primes": 79,
+     "tested": 3597,
+     "expected": 98.45
+    },
+    "41": {
+     "primes": 99,
+     "tested": 3573,
+     "expected": 95.37
+    },
+    "42": {
+     "primes": 84,
+     "tested": 3589,
+     "expected": 93.517
+    },
+    "43": {
+     "primes": 96,
+     "tested": 3556,
+     "expected": 90.477
+    },
+    "44": {
+     "primes": 76,
+     "tested": 3590,
+     "expected": 89.255
+    },
+    "45": {
+     "primes": 84,
+     "tested": 3587,
+     "expected": 87.184
+    },
+    "46": {
+     "primes": 80,
+     "tested": 3574,
+     "expected": 84.966
+    },
+    "47": {
+     "primes": 78,
+     "tested": 3585,
+     "expected": 83.402
+    },
+    "48": {
+     "primes": 74,
+     "tested": 3588,
+     "expected": 81.729
+    },
+    "49": {
+     "primes": 106,
+     "tested": 3570,
+     "expected": 79.637
+    },
+    "50": {
+     "primes": 76,
+     "tested": 3575,
+     "expected": 78.141
+    },
+    "51": {
+     "primes": 79,
+     "tested": 3590,
+     "expected": 76.926
+    },
+    "52": {
+     "primes": 81,
+     "tested": 3589,
+     "expected": 75.413
+    },
+    "53": {
+     "primes": 82,
+     "tested": 3581,
+     "expected": 73.818
+    },
+    "54": {
+     "primes": 77,
+     "tested": 3572,
+     "expected": 72.261
+    },
+    "55": {
+     "primes": 71,
+     "tested": 3571,
+     "expected": 70.914
+    },
+    "56": {
+     "primes": 64,
+     "tested": 3584,
+     "expected": 69.902
+    },
+    "57": {
+     "primes": 73,
+     "tested": 3582,
+     "expected": 68.628
+    },
+    "58": {
+     "primes": 69,
+     "tested": 3569,
+     "expected": 67.19
+    },
+    "59": {
+     "primes": 62,
+     "tested": 3571,
+     "expected": 66.088
+    },
+    "60": {
+     "primes": 66,
+     "tested": 3591,
+     "expected": 65.344
+    },
+    "61": {
+     "primes": 70,
+     "tested": 3580,
+     "expected": 64.072
+    },
+    "62": {
+     "primes": 47,
+     "tested": 3579,
+     "expected": 63.013
+    },
+    "63": {
+     "primes": 66,
+     "tested": 3562,
+     "expected": 61.711
+    },
+    "64": {
+     "primes": 71,
+     "tested": 3577,
+     "expected": 60.998
+    },
+    "65": {
+     "primes": 60,
+     "tested": 3566,
+     "expected": 59.868
+    },
+    "66": {
+     "primes": 60,
+     "tested": 3585,
+     "expected": 59.262
+    },
+    "67": {
+     "primes": 49,
+     "tested": 3561,
+     "expected": 57.988
+    },
+    "68": {
+     "primes": 49,
+     "tested": 3560,
+     "expected": 57.119
+    },
+    "69": {
+     "primes": 48,
+     "tested": 3568,
+     "expected": 56.415
+    },
+    "70": {
+     "primes": 48,
+     "tested": 3558,
+     "expected": 55.448
+    },
+    "71": {
+     "primes": 57,
+     "tested": 3563,
+     "expected": 54.74
+    },
+    "72": {
+     "primes": 51,
+     "tested": 3576,
+     "expected": 54.173
+    },
+    "73": {
+     "primes": 51,
+     "tested": 3575,
+     "expected": 53.411
+    },
+    "74": {
+     "primes": 50,
+     "tested": 3537,
+     "expected": 52.127
+    },
+    "75": {
+     "primes": 43,
+     "tested": 3567,
+     "expected": 51.865
+    },
+    "76": {
+     "primes": 52,
+     "tested": 3567,
+     "expected": 51.18
+    },
+    "77": {
+     "primes": 55,
+     "tested": 3575,
+     "expected": 50.626
+    },
+    "78": {
+     "primes": 61,
+     "tested": 3588,
+     "expected": 50.157
+    },
+    "79": {
+     "primes": 50,
+     "tested": 3563,
+     "expected": 49.17
+    },
+    "80": {
+     "primes": 51,
+     "tested": 3552,
+     "expected": 48.405
+    },
+    "81": {
+     "primes": 39,
+     "tested": 3554,
+     "expected": 47.832
+    },
+    "82": {
+     "primes": 39,
+     "tested": 3565,
+     "expected": 47.392
+    },
+    "83": {
+     "primes": 36,
+     "tested": 3574,
+     "expected": 46.937
+    },
+    "84": {
+     "primes": 39,
+     "tested": 3534,
+     "expected": 45.857
+    },
+    "85": {
+     "primes": 37,
+     "tested": 3567,
+     "expected": 45.74
+    },
+    "86": {
+     "primes": 53,
+     "tested": 3546,
+     "expected": 44.942
+    },
+    "87": {
+     "primes": 47,
+     "tested": 3558,
+     "expected": 44.569
+    },
+    "88": {
+     "primes": 40,
+     "tested": 3583,
+     "expected": 44.37
+    },
+    "89": {
+     "primes": 37,
+     "tested": 3548,
+     "expected": 43.441
+    },
+    "90": {
+     "primes": 42,
+     "tested": 3566,
+     "expected": 43.175
+    },
+    "91": {
+     "primes": 38,
+     "tested": 3541,
+     "expected": 42.4
+    },
+    "92": {
+     "primes": 36,
+     "tested": 3566,
+     "expected": 42.233
+    },
+    "93": {
+     "primes": 40,
+     "tested": 3574,
+     "expected": 41.87
+    },
+    "94": {
+     "primes": 51,
+     "tested": 3577,
+     "expected": 41.461
+    },
+    "95": {
+     "primes": 43,
+     "tested": 3578,
+     "expected": 41.033
+    },
+    "96": {
+     "primes": 42,
+     "tested": 3566,
+     "expected": 40.469
+    },
+    "97": {
+     "primes": 26,
+     "tested": 3557,
+     "expected": 39.949
+    },
+    "98": {
+     "primes": 42,
+     "tested": 3580,
+     "expected": 39.795
+    },
+    "99": {
+     "primes": 42,
+     "tested": 3573,
+     "expected": 39.315
+    },
+    "100": {
+     "primes": 52,
+     "tested": 3565,
+     "expected": 38.836
+    }
+   }
+  }
+ }
+}

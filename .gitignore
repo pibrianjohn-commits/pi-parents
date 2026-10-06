@@ -1,2 +1,4 @@
 __pycache__/
 *.pyc
+results/stage3/*/pieces_pass_*/
+results/stage3/*/progress.log
