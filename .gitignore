@@ -3,3 +3,5 @@ __pycache__/
 results/stage3/*/pieces_pass_*/
 results/stage3/*/progress.log
 results/stage3/controls/primes_pass_A.csv
+results/stage4/*/nested_*.csv.gz
+results/stage4/*/close_sets_*.csv
