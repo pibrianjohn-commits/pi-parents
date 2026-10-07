@@ -15,7 +15,7 @@ method and roadmap are in [BRIEF.md](BRIEF.md).
 | 4 | Structure finder | Done on the saved primes (up to 1,000 digits): towers, overlaps, bridges, covers, constellations, low entropy. |
 | 5 | Controls and comparison report | Not started |
 | 6 | Launchable app | Not started |
-| 7 | 100,000 digits | Not started |
+| 7 | 100,000 digits | Started: parents and pi to 100,000 places, pass A (1-30 digits), and the low-entropy lean re-tested. |
 
 ## What to look at
 
@@ -29,6 +29,10 @@ method and roadmap are in [BRIEF.md](BRIEF.md).
   prime found, one per line as stream, start place, length. Place 1 is the
   first decimal. `summary_pass_*.json` has the counts for each length
   against what chance would give.
+- `data/*_100000.txt`: Parent One = pi^2/(pi+1), Parent Two = pi/(pi+1) and
+  pi to 100,000 places. The first 10,000 places match the files above.
+- `results/stage4/D100000/lean_report.txt`: Parent One's low-entropy lean
+  re-tested at 100,000 places, with ten 10,000-digit blocks for the spread.
 - `results/stage4/D10000/report.txt`: Stage 4 in plain tables, Parent One,
   Parent Two and pi side by side, each against prime density's prediction.
   `towers_*.csv` lists every prime with its depth, prime prefixes, prime
@@ -90,5 +94,6 @@ python3 -m pi_parents.primes [A|B|AB]  # Stage 3: prime search, all cores, resum
 python3 -m pi_parents.structure        # Stage 4: towers, overlaps, bridges, covers, low entropy
 python3 -m pi_parents.constellations   # Stage 4: constellation tests (a) and (b)
 python3 -m pi_parents.report           # Stage 4: plain-text report
+python3 -m pi_parents.lean             # low-entropy lean at 10,000 and 100,000 places
 python3 -m unittest discover -s tests -t .
 ```

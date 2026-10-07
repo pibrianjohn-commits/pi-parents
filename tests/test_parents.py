@@ -50,6 +50,20 @@ class CheckValues(unittest.TestCase):
         self.assertEqual(saved["parent_two"], self.two)
 
 
+class FromPi(unittest.TestCase):
+    def test_formula_matches_convergent_method_to_10000(self):
+        r = parents.make_parents_from_pi(10_000)
+        c = parents.make_parents(10_000)
+        for k in ("pi", "one", "two"):
+            self.assertEqual(r[k], c[k], k)
+
+    def test_saved_100000_start_with_saved_10000(self):
+        big, small = parents.load(100_000), parents.load(10_000)
+        for k in small:
+            self.assertEqual(len(big[k]), 100_002)
+            self.assertTrue(big[k].startswith(small[k]), k)
+
+
 class SmallCases(unittest.TestCase):
     def test_first_convergents(self):
         # 3/1, 22/7, 333/106, 355/113: 355/113 is the first good to 6 places.

@@ -1,0 +1,484 @@
+{
+ "settings": {
+  "decimal_places": 10000,
+  "include_leading_digit": false,
+  "pass_name": "A30",
+  "shortest": 1,
+  "longest": 30,
+  "trial_bound": 20000,
+  "test": "gcd with primorial, then gmpy2.is_prime"
+ },
+ "streams": {
+  "parent_one": {
+   "primes": 162370,
+   "tested": 1097310,
+   "expected": 162245.37023750876,
+   "by_length": {
+    "1": {
+     "primes": 40095,
+     "tested": 59759,
+     "expected": 39839.333
+    },
+    "2": {
+     "primes": 20927,
+     "tested": 35809,
+     "expected": 20888.583
+    },
+    "3": {
+     "primes": 14147,
+     "tested": 35730,
+     "expected": 14192.75
+    },
+    "4": {
+     "primes": 10449,
+     "tested": 35856,
+     "expected": 10567.56
+    },
+    "5": {
+     "primes": 8282,
+     "tested": 35786,
+     "expected": 8313.287
+    },
+    "6": {
+     "primes": 6753,
+     "tested": 35830,
+     "expected": 6858.061
+    },
+    "7": {
+     "primes": 5791,
+     "tested": 35733,
+     "expected": 5817.342
+    },
+    "8": {
+     "primes": 4919,
+     "tested": 35700,
+     "expected": 5054.55
+    },
+    "9": {
+     "primes": 4541,
+     "tested": 35791,
+     "expected": 4483.064
+    },
+    "10": {
+     "primes": 4103,
+     "tested": 35719,
+     "expected": 4010.157
+    },
+    "11": {
+     "primes": 3602,
+     "tested": 35746,
+     "expected": 3636.615
+    },
+    "12": {
+     "primes": 3347,
+     "tested": 35784,
+     "expected": 3328.957
+    },
+    "13": {
+     "primes": 3110,
+     "tested": 35819,
+     "expected": 3069.036
+    },
+    "14": {
+     "primes": 2818,
+     "tested": 35850,
+     "expected": 2846.823
+    },
+    "15": {
+     "primes": 2614,
+     "tested": 35773,
+     "expected": 2647.001
+    },
+    "16": {
+     "primes": 2453,
+     "tested": 35704,
+     "expected": 2473.354
+    },
+    "17": {
+     "primes": 2355,
+     "tested": 35791,
+     "expected": 2330.502
+    },
+    "18": {
+     "primes": 2191,
+     "tested": 35729,
+     "expected": 2194.868
+    },
+    "19": {
+     "primes": 2056,
+     "tested": 35825,
+     "expected": 2082.967
+    },
+    "20": {
+     "primes": 1963,
+     "tested": 35729,
+     "expected": 1971.566
+    },
+    "21": {
+     "primes": 1931,
+     "tested": 35805,
+     "expected": 1880.34
+    },
+    "22": {
+     "primes": 1781,
+     "tested": 35789,
+     "expected": 1792.984
+    },
+    "23": {
+     "primes": 1780,
+     "tested": 35739,
+     "expected": 1711.362
+    },
+    "24": {
+     "primes": 1607,
+     "tested": 35766,
+     "expected": 1640.243
+    },
+    "25": {
+     "primes": 1588,
+     "tested": 35743,
+     "expected": 1572.795
+    },
+    "26": {
+     "primes": 1581,
+     "tested": 35820,
+     "expected": 1514.761
+    },
+    "27": {
+     "primes": 1426,
+     "tested": 35812,
+     "expected": 1457.666
+    },
+    "28": {
+     "primes": 1422,
+     "tested": 35763,
+     "expected": 1403.061
+    },
+    "29": {
+     "primes": 1419,
+     "tested": 35832,
+     "expected": 1356.708
+    },
+    "30": {
+     "primes": 1319,
+     "tested": 35778,
+     "expected": 1309.072
+    }
+   }
+  },
+  "parent_two": {
+   "primes": 163020,
+   "tested": 1106539,
+   "expected": 163493.31395308668,
+   "by_length": {
+    "1": {
+     "primes": 39917,
+     "tested": 60043,
+     "expected": 40028.667
+    },
+    "2": {
+     "primes": 21126,
+     "tested": 36092,
+     "expected": 21053.667
+    },
+    "3": {
+     "primes": 14371,
+     "tested": 36064,
+     "expected": 14325.422
+    },
+    "4": {
+     "primes": 10712,
+     "tested": 36097,
+     "expected": 10638.588
+    },
+    "5": {
+     "primes": 8373,
+     "tested": 36139,
+     "expected": 8395.29
+    },
+    "6": {
+     "primes": 6847,
+     "tested": 36075,
+     "expected": 6904.955
+    },
+    "7": {
+     "primes": 5707,
+     "tested": 36082,
+     "expected": 5874.16
+    },
+    "8": {
+     "primes": 5008,
+     "tested": 36123,
+     "expected": 5115.233
+    },
+    "9": {
+     "primes": 4497,
+     "tested": 36120,
+     "expected": 4524.944
+    },
+    "10": {
+     "primes": 3968,
+     "tested": 36115,
+     "expected": 4054.691
+    },
+    "11": {
+     "primes": 3684,
+     "tested": 36046,
+     "expected": 3667.843
+    },
+    "12": {
+     "primes": 3458,
+     "tested": 36117,
+     "expected": 3359.899
+    },
+    "13": {
+     "primes": 3066,
+     "tested": 36183,
+     "expected": 3100.258
+    },
+    "14": {
+     "primes": 2769,
+     "tested": 36070,
+     "expected": 2863.988
+    },
+    "15": {
+     "primes": 2592,
+     "tested": 36008,
+     "expected": 2664.473
+    },
+    "16": {
+     "primes": 2455,
+     "tested": 36053,
+     "expected": 2497.703
+    },
+    "17": {
+     "primes": 2362,
+     "tested": 36048,
+     "expected": 2347.423
+    },
+    "18": {
+     "primes": 2214,
+     "tested": 36087,
+     "expected": 2217.258
+    },
+    "19": {
+     "primes": 2219,
+     "tested": 36081,
+     "expected": 2097.692
+    },
+    "20": {
+     "primes": 1980,
+     "tested": 36097,
+     "expected": 1992.053
+    },
+    "21": {
+     "primes": 1851,
+     "tested": 36095,
+     "expected": 1895.568
+    },
+    "22": {
+     "primes": 1795,
+     "tested": 36048,
+     "expected": 1805.905
+    },
+    "23": {
+     "primes": 1746,
+     "tested": 36084,
+     "expected": 1727.947
+    },
+    "24": {
+     "primes": 1679,
+     "tested": 36149,
+     "expected": 1657.987
+    },
+    "25": {
+     "primes": 1599,
+     "tested": 36040,
+     "expected": 1585.944
+    },
+    "26": {
+     "primes": 1519,
+     "tested": 36121,
+     "expected": 1527.502
+    },
+    "27": {
+     "primes": 1529,
+     "tested": 36094,
+     "expected": 1469.13
+    },
+    "28": {
+     "primes": 1346,
+     "tested": 36057,
+     "expected": 1414.642
+    },
+    "29": {
+     "primes": 1367,
+     "tested": 36064,
+     "expected": 1365.582
+    },
+    "30": {
+     "primes": 1264,
+     "tested": 36047,
+     "expected": 1318.9
+    }
+   }
+  },
+  "pi": {
+   "primes": 163793,
+   "tested": 1105796,
+   "expected": 163383.19102731816,
+   "by_length": {
+    "1": {
+     "primes": 39984,
+     "tested": 60023,
+     "expected": 40015.333
+    },
+    "2": {
+     "primes": 20890,
+     "tested": 36034,
+     "expected": 21019.833
+    },
+    "3": {
+     "primes": 14367,
+     "tested": 36030,
+     "expected": 14311.917
+    },
+    "4": {
+     "primes": 10747,
+     "tested": 36107,
+     "expected": 10641.535
+    },
+    "5": {
+     "primes": 8479,
+     "tested": 36104,
+     "expected": 8387.16
+    },
+    "6": {
+     "primes": 6916,
+     "tested": 36071,
+     "expected": 6904.19
+    },
+    "7": {
+     "primes": 6056,
+     "tested": 36029,
+     "expected": 5865.531
+    },
+    "8": {
+     "primes": 5179,
+     "tested": 36040,
+     "expected": 5103.47
+    },
+    "9": {
+     "primes": 4469,
+     "tested": 36077,
+     "expected": 4518.671
+    },
+    "10": {
+     "primes": 4032,
+     "tested": 36089,
+     "expected": 4051.118
+    },
+    "11": {
+     "primes": 3709,
+     "tested": 36127,
+     "expected": 3675.624
+    },
+    "12": {
+     "primes": 3436,
+     "tested": 36110,
+     "expected": 3359.603
+    },
+    "13": {
+     "primes": 3014,
+     "tested": 36145,
+     "expected": 3097.733
+    },
+    "14": {
+     "primes": 2967,
+     "tested": 36065,
+     "expected": 2864.371
+    },
+    "15": {
+     "primes": 2631,
+     "tested": 36010,
+     "expected": 2664.61
+    },
+    "16": {
+     "primes": 2412,
+     "tested": 36184,
+     "expected": 2506.79
+    },
+    "17": {
+     "primes": 2423,
+     "tested": 36024,
+     "expected": 2345.821
+    },
+    "18": {
+     "primes": 2219,
+     "tested": 35967,
+     "expected": 2209.882
+    },
+    "19": {
+     "primes": 2135,
+     "tested": 36020,
+     "expected": 2094.271
+    },
+    "20": {
+     "primes": 1968,
+     "tested": 36074,
+     "expected": 1990.873
+    },
+    "21": {
+     "primes": 1829,
+     "tested": 36116,
+     "expected": 1896.918
+    },
+    "22": {
+     "primes": 1779,
+     "tested": 36102,
+     "expected": 1808.536
+    },
+    "23": {
+     "primes": 1670,
+     "tested": 36028,
+     "expected": 1725.117
+    },
+    "24": {
+     "primes": 1678,
+     "tested": 35964,
+     "expected": 1649.531
+    },
+    "25": {
+     "primes": 1586,
+     "tested": 36020,
+     "expected": 1585.167
+    },
+    "26": {
+     "primes": 1598,
+     "tested": 36052,
+     "expected": 1524.659
+    },
+    "27": {
+     "primes": 1446,
+     "tested": 36055,
+     "expected": 1467.519
+    },
+    "28": {
+     "primes": 1429,
+     "tested": 35960,
+     "expected": 1410.811
+    },
+    "29": {
+     "primes": 1382,
+     "tested": 36082,
+     "expected": 1366.27
+    },
+    "30": {
+     "primes": 1363,
+     "tested": 36087,
+     "expected": 1320.329
+    }
+   }
+  }
+ }
+}

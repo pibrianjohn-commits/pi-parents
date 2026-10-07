@@ -69,6 +69,35 @@ def make_parents(D=10_000, guard=GUARD_DIGITS):
                 exact_ok=(one == exact_one and two == exact_two))
 
 
+def make_parents_from_pi(D, guard=40):
+    """Parent One = pi^2 / (pi + 1) and Parent Two = pi / (pi + 1), each
+    truncated to D places. Brian's formula for 100,000 places: the same
+    split, with pi itself in place of a convergent.
+
+    pi comes from Machin's formula and is checked against MPFR's own pi.
+    """
+    import gmpy2
+    from gmpy2 import mpz
+    W = D + guard
+    one = mpz(10) ** W
+    extra = mpz(10) ** 20            # the series' rounding stays in here
+    pi_w = 4 * (4 * arctan_inv(mpz(5), one * extra)
+                - arctan_inv(mpz(239), one * extra)) // extra
+    gmpy2.get_context().precision = int(W * 3.33) + 64
+    check = mpz(gmpy2.floor(gmpy2.const_pi() * one))
+    if abs(check - pi_w) > 1:
+        raise ArithmeticError("Machin's pi and MPFR's pi disagree")
+    # pi_w ~ pi * 10^W to within a unit; that stays in the guard digits.
+    p1_w = pi_w * pi_w // (pi_w + one)
+    p2_w = pi_w * one // (pi_w + one)
+    G = mpz(10) ** guard
+    for x in (pi_w, p1_w, p2_w):
+        tail = int(x % G)
+        if tail < 100 or tail > G - 100:     # a carry could reach place D
+            raise ArithmeticError("guard digits too close to a boundary")
+    return dict(D=D, pi=int(pi_w // G), one=int(p1_w // G), two=int(p2_w // G))
+
+
 def fmt(x, D):
     """Whole number x scaled by 10^D, written as a decimal."""
     s = str(x).rjust(D + 1, "0")
@@ -92,7 +121,9 @@ def load(D=10_000):
     """The three numbers as decimal strings, generating and saving if needed."""
     files = parent_files(D)
     if not all(f.exists() for f in files.values()):
-        save(make_parents(D))
+        # 10,000 places by the convergent method (the Stage 1 check values);
+        # other sizes by Brian's formula, pi^2/(pi+1) and pi/(pi+1).
+        save(make_parents(D) if D == 10_000 else make_parents_from_pi(D))
     return {name: f.read_text().strip() for name, f in files.items()}
 
 

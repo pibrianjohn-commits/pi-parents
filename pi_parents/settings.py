@@ -20,8 +20,11 @@ LOWEST_WINDOWS_LISTED = 10
 # every starting digit, skipping runs that start with 0 or end in an even
 # digit or 5. Length 1 is the exception: 2, 3, 5 and 7 all count as primes.
 # Pass A is fast; pass B is the long one.
-PRIME_PASSES = {"A": (1, 100), "B": (101, 1000)}
+PRIME_PASSES = {"A": (1, 100), "B": (101, 1000),
+                # Pass A cut to 1-30 digits, for the 100,000-place check of
+                # the low-entropy lean.
+                "A30": (1, 30)}
 
 # Starting digits per saved piece of work. A stopped run resumes from the
 # pieces already saved.
-PRIME_CHUNK_STARTS = {"A": 500, "B": 50}
+PRIME_CHUNK_STARTS = {"A": 500, "B": 50, "A30": 2000}
