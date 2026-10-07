@@ -2,6 +2,13 @@
   "settings": {
     "decimal_places": 10000,
     "entropy_windows": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
       10,
       12,
       15,
@@ -12,6 +19,1280 @@
     "include_leading_digit": false
   },
   "windows": {
+    "3": {
+      "most_possible": 1.584962500721156,
+      "streams": {
+        "parent_one": {
+          "windows": 9998,
+          "mean": 1.3883340012649907,
+          "stdev": 0.32417275230335596,
+          "minimum": 0.0,
+          "maximum": 1.584962500721156,
+          "lowest_windows": [
+            {
+              "start_place": 102,
+              "entropy": 0.0,
+              "digits": "555"
+            },
+            {
+              "start_place": 193,
+              "entropy": 0.0,
+              "digits": "777"
+            },
+            {
+              "start_place": 905,
+              "entropy": 0.0,
+              "digits": "666"
+            },
+            {
+              "start_place": 1229,
+              "entropy": 0.0,
+              "digits": "111"
+            },
+            {
+              "start_place": 1313,
+              "entropy": 0.0,
+              "digits": "000"
+            },
+            {
+              "start_place": 1351,
+              "entropy": 0.0,
+              "digits": "222"
+            },
+            {
+              "start_place": 1393,
+              "entropy": 0.0,
+              "digits": "777"
+            },
+            {
+              "start_place": 1401,
+              "entropy": 0.0,
+              "digits": "999"
+            },
+            {
+              "start_place": 1491,
+              "entropy": 0.0,
+              "digits": "111"
+            },
+            {
+              "start_place": 1528,
+              "entropy": 0.0,
+              "digits": "333"
+            }
+          ]
+        },
+        "parent_two": {
+          "windows": 9998,
+          "mean": 1.3827881300060356,
+          "stdev": 0.3306651586277262,
+          "minimum": 0.0,
+          "maximum": 1.584962500721156,
+          "lowest_windows": [
+            {
+              "start_place": 20,
+              "entropy": 0.0,
+              "digits": "444"
+            },
+            {
+              "start_place": 54,
+              "entropy": 0.0,
+              "digits": "666"
+            },
+            {
+              "start_place": 271,
+              "entropy": 0.0,
+              "digits": "333"
+            },
+            {
+              "start_place": 347,
+              "entropy": 0.0,
+              "digits": "888"
+            },
+            {
+              "start_place": 503,
+              "entropy": 0.0,
+              "digits": "111"
+            },
+            {
+              "start_place": 773,
+              "entropy": 0.0,
+              "digits": "888"
+            },
+            {
+              "start_place": 930,
+              "entropy": 0.0,
+              "digits": "999"
+            },
+            {
+              "start_place": 1012,
+              "entropy": 0.0,
+              "digits": "888"
+            },
+            {
+              "start_place": 1209,
+              "entropy": 0.0,
+              "digits": "666"
+            },
+            {
+              "start_place": 1406,
+              "entropy": 0.0,
+              "digits": "888"
+            }
+          ]
+        },
+        "pi": {
+          "windows": 9998,
+          "mean": 1.3958185056657266,
+          "stdev": 0.32136703438721087,
+          "minimum": 0.0,
+          "maximum": 1.584962500721156,
+          "lowest_windows": [
+            {
+              "start_place": 153,
+              "entropy": 0.0,
+              "digits": "111"
+            },
+            {
+              "start_place": 177,
+              "entropy": 0.0,
+              "digits": "555"
+            },
+            {
+              "start_place": 601,
+              "entropy": 0.0,
+              "digits": "000"
+            },
+            {
+              "start_place": 762,
+              "entropy": 0.0,
+              "digits": "999"
+            },
+            {
+              "start_place": 765,
+              "entropy": 0.0,
+              "digits": "999"
+            },
+            {
+              "start_place": 855,
+              "entropy": 0.0,
+              "digits": "000"
+            },
+            {
+              "start_place": 983,
+              "entropy": 0.0,
+              "digits": "111"
+            },
+            {
+              "start_place": 1232,
+              "entropy": 0.0,
+              "digits": "555"
+            },
+            {
+              "start_place": 1450,
+              "entropy": 0.0,
+              "digits": "555"
+            },
+            {
+              "start_place": 1589,
+              "entropy": 0.0,
+              "digits": "777"
+            }
+          ]
+        }
+      }
+    },
+    "4": {
+      "most_possible": 2.0,
+      "streams": {
+        "parent_one": {
+          "windows": 9997,
+          "mean": 1.7111438668903796,
+          "stdev": 0.32489106631471587,
+          "minimum": 0.0,
+          "maximum": 2.0,
+          "lowest_windows": [
+            {
+              "start_place": 1313,
+              "entropy": 0.0,
+              "digits": "0000"
+            },
+            {
+              "start_place": 2521,
+              "entropy": 0.0,
+              "digits": "4444"
+            },
+            {
+              "start_place": 8414,
+              "entropy": 0.0,
+              "digits": "5555"
+            },
+            {
+              "start_place": 9069,
+              "entropy": 0.0,
+              "digits": "1111"
+            },
+            {
+              "start_place": 33,
+              "entropy": 0.811278,
+              "digits": "0020"
+            },
+            {
+              "start_place": 42,
+              "entropy": 0.811278,
+              "digits": "3033"
+            },
+            {
+              "start_place": 99,
+              "entropy": 0.811278,
+              "digits": "5525"
+            },
+            {
+              "start_place": 185,
+              "entropy": 0.811278,
+              "digits": "3323"
+            },
+            {
+              "start_place": 192,
+              "entropy": 0.811278,
+              "digits": "4777"
+            },
+            {
+              "start_place": 395,
+              "entropy": 0.811278,
+              "digits": "0010"
+            }
+          ]
+        },
+        "parent_two": {
+          "windows": 9997,
+          "mean": 1.7037132164437312,
+          "stdev": 0.33130853805658983,
+          "minimum": 0.0,
+          "maximum": 2.0,
+          "lowest_windows": [
+            {
+              "start_place": 2778,
+              "entropy": 0.0,
+              "digits": "3333"
+            },
+            {
+              "start_place": 3619,
+              "entropy": 0.0,
+              "digits": "1111"
+            },
+            {
+              "start_place": 3799,
+              "entropy": 0.0,
+              "digits": "9999"
+            },
+            {
+              "start_place": 3809,
+              "entropy": 0.0,
+              "digits": "0000"
+            },
+            {
+              "start_place": 4704,
+              "entropy": 0.0,
+              "digits": "7777"
+            },
+            {
+              "start_place": 7917,
+              "entropy": 0.0,
+              "digits": "0000"
+            },
+            {
+              "start_place": 8139,
+              "entropy": 0.0,
+              "digits": "8888"
+            },
+            {
+              "start_place": 9091,
+              "entropy": 0.0,
+              "digits": "5555"
+            },
+            {
+              "start_place": 9431,
+              "entropy": 0.0,
+              "digits": "9999"
+            },
+            {
+              "start_place": 9560,
+              "entropy": 0.0,
+              "digits": "8888"
+            }
+          ]
+        },
+        "pi": {
+          "windows": 9997,
+          "mean": 1.7170051743465768,
+          "stdev": 0.32429094292242217,
+          "minimum": 0.0,
+          "maximum": 2.0,
+          "lowest_windows": [
+            {
+              "start_place": 762,
+              "entropy": 0.0,
+              "digits": "9999"
+            },
+            {
+              "start_place": 1589,
+              "entropy": 0.0,
+              "digits": "7777"
+            },
+            {
+              "start_place": 4751,
+              "entropy": 0.0,
+              "digits": "8888"
+            },
+            {
+              "start_place": 4902,
+              "entropy": 0.0,
+              "digits": "2222"
+            },
+            {
+              "start_place": 5241,
+              "entropy": 0.0,
+              "digits": "7777"
+            },
+            {
+              "start_place": 5322,
+              "entropy": 0.0,
+              "digits": "7777"
+            },
+            {
+              "start_place": 5863,
+              "entropy": 0.0,
+              "digits": "7777"
+            },
+            {
+              "start_place": 7964,
+              "entropy": 0.0,
+              "digits": "2222"
+            },
+            {
+              "start_place": 24,
+              "entropy": 0.811278,
+              "digits": "3383"
+            },
+            {
+              "start_place": 42,
+              "entropy": 0.811278,
+              "digits": "9399"
+            }
+          ]
+        }
+      }
+    },
+    "5": {
+      "most_possible": 2.321928094887362,
+      "streams": {
+        "parent_one": {
+          "windows": 9996,
+          "mean": 1.945294115950385,
+          "stdev": 0.3185218233791551,
+          "minimum": 0.0,
+          "maximum": 2.321928094887362,
+          "lowest_windows": [
+            {
+              "start_place": 9069,
+              "entropy": 0.0,
+              "digits": "11111"
+            },
+            {
+              "start_place": 33,
+              "entropy": 0.721928,
+              "digits": "00200"
+            },
+            {
+              "start_place": 99,
+              "entropy": 0.721928,
+              "digits": "55255"
+            },
+            {
+              "start_place": 185,
+              "entropy": 0.721928,
+              "digits": "33233"
+            },
+            {
+              "start_place": 477,
+              "entropy": 0.721928,
+              "digits": "22722"
+            },
+            {
+              "start_place": 903,
+              "entropy": 0.721928,
+              "digits": "69666"
+            },
+            {
+              "start_place": 1312,
+              "entropy": 0.721928,
+              "digits": "20000"
+            },
+            {
+              "start_place": 1870,
+              "entropy": 0.721928,
+              "digits": "11811"
+            },
+            {
+              "start_place": 2520,
+              "entropy": 0.721928,
+              "digits": "24444"
+            },
+            {
+              "start_place": 2613,
+              "entropy": 0.721928,
+              "digits": "55755"
+            }
+          ]
+        },
+        "parent_two": {
+          "windows": 9996,
+          "mean": 1.9374719793439685,
+          "stdev": 0.32253743001866797,
+          "minimum": 0.0,
+          "maximum": 2.321928094887362,
+          "lowest_windows": [
+            {
+              "start_place": 3809,
+              "entropy": 0.0,
+              "digits": "00000"
+            },
+            {
+              "start_place": 7,
+              "entropy": 0.721928,
+              "digits": "99299"
+            },
+            {
+              "start_place": 653,
+              "entropy": 0.721928,
+              "digits": "44044"
+            },
+            {
+              "start_place": 1477,
+              "entropy": 0.721928,
+              "digits": "88488"
+            },
+            {
+              "start_place": 1623,
+              "entropy": 0.721928,
+              "digits": "01000"
+            },
+            {
+              "start_place": 1919,
+              "entropy": 0.721928,
+              "digits": "56555"
+            },
+            {
+              "start_place": 2013,
+              "entropy": 0.721928,
+              "digits": "93999"
+            },
+            {
+              "start_place": 2070,
+              "entropy": 0.721928,
+              "digits": "89888"
+            },
+            {
+              "start_place": 2529,
+              "entropy": 0.721928,
+              "digits": "55755"
+            },
+            {
+              "start_place": 2768,
+              "entropy": 0.721928,
+              "digits": "55545"
+            }
+          ]
+        },
+        "pi": {
+          "windows": 9996,
+          "mean": 1.9489518074690184,
+          "stdev": 0.31758356837124513,
+          "minimum": 0.0,
+          "maximum": 2.321928094887362,
+          "lowest_windows": [
+            {
+              "start_place": 762,
+              "entropy": 0.0,
+              "digits": "99999"
+            },
+            {
+              "start_place": 739,
+              "entropy": 0.721928,
+              "digits": "77477"
+            },
+            {
+              "start_place": 853,
+              "entropy": 0.721928,
+              "digits": "01000"
+            },
+            {
+              "start_place": 1249,
+              "entropy": 0.721928,
+              "digits": "44944"
+            },
+            {
+              "start_place": 1588,
+              "entropy": 0.721928,
+              "digits": "97777"
+            },
+            {
+              "start_place": 2278,
+              "entropy": 0.721928,
+              "digits": "22262"
+            },
+            {
+              "start_place": 3844,
+              "entropy": 0.721928,
+              "digits": "11011"
+            },
+            {
+              "start_place": 3864,
+              "entropy": 0.721928,
+              "digits": "42444"
+            },
+            {
+              "start_place": 4173,
+              "entropy": 0.721928,
+              "digits": "43444"
+            },
+            {
+              "start_place": 4199,
+              "entropy": 0.721928,
+              "digits": "00700"
+            }
+          ]
+        }
+      }
+    },
+    "6": {
+      "most_possible": 2.584962500721156,
+      "streams": {
+        "parent_one": {
+          "windows": 9995,
+          "mean": 2.1230959598082597,
+          "stdev": 0.309795940173652,
+          "minimum": 0.6500224216483543,
+          "maximum": 2.584962500721156,
+          "lowest_windows": [
+            {
+              "start_place": 99,
+              "entropy": 0.650022,
+              "digits": "552555"
+            },
+            {
+              "start_place": 1313,
+              "entropy": 0.650022,
+              "digits": "000060"
+            },
+            {
+              "start_place": 1870,
+              "entropy": 0.650022,
+              "digits": "118111"
+            },
+            {
+              "start_place": 2613,
+              "entropy": 0.650022,
+              "digits": "557555"
+            },
+            {
+              "start_place": 9068,
+              "entropy": 0.650022,
+              "digits": "511111"
+            },
+            {
+              "start_place": 184,
+              "entropy": 0.918296,
+              "digits": "233233"
+            },
+            {
+              "start_place": 1398,
+              "entropy": 0.918296,
+              "digits": "933999"
+            },
+            {
+              "start_place": 3131,
+              "entropy": 0.918296,
+              "digits": "388838"
+            },
+            {
+              "start_place": 3816,
+              "entropy": 0.918296,
+              "digits": "474447"
+            },
+            {
+              "start_place": 4681,
+              "entropy": 0.918296,
+              "digits": "929929"
+            }
+          ]
+        },
+        "parent_two": {
+          "windows": 9995,
+          "mean": 2.115018597841606,
+          "stdev": 0.31296157987834117,
+          "minimum": 0.6500224216483543,
+          "maximum": 2.584962500721156,
+          "lowest_windows": [
+            {
+              "start_place": 3808,
+              "entropy": 0.650022,
+              "digits": "700000"
+            },
+            {
+              "start_place": 6203,
+              "entropy": 0.650022,
+              "digits": "229222"
+            },
+            {
+              "start_place": 9558,
+              "entropy": 0.650022,
+              "digits": "818888"
+            },
+            {
+              "start_place": 1622,
+              "entropy": 0.918296,
+              "digits": "101000"
+            },
+            {
+              "start_place": 1918,
+              "entropy": 0.918296,
+              "digits": "656555"
+            },
+            {
+              "start_place": 2013,
+              "entropy": 0.918296,
+              "digits": "939993"
+            },
+            {
+              "start_place": 2528,
+              "entropy": 0.918296,
+              "digits": "755755"
+            },
+            {
+              "start_place": 2767,
+              "entropy": 0.918296,
+              "digits": "455545"
+            },
+            {
+              "start_place": 2778,
+              "entropy": 0.918296,
+              "digits": "333322"
+            },
+            {
+              "start_place": 4703,
+              "entropy": 0.918296,
+              "digits": "377773"
+            }
+          ]
+        },
+        "pi": {
+          "windows": 9995,
+          "mean": 2.1257406714796643,
+          "stdev": 0.3071102333468191,
+          "minimum": 0.0,
+          "maximum": 2.584962500721156,
+          "lowest_windows": [
+            {
+              "start_place": 762,
+              "entropy": 0.0,
+              "digits": "999999"
+            },
+            {
+              "start_place": 1589,
+              "entropy": 0.650022,
+              "digits": "777727"
+            },
+            {
+              "start_place": 852,
+              "entropy": 0.918296,
+              "digits": "101000"
+            },
+            {
+              "start_place": 2277,
+              "entropy": 0.918296,
+              "digits": "622262"
+            },
+            {
+              "start_place": 3844,
+              "entropy": 0.918296,
+              "digits": "110110"
+            },
+            {
+              "start_place": 4173,
+              "entropy": 0.918296,
+              "digits": "434443"
+            },
+            {
+              "start_place": 4751,
+              "entropy": 0.918296,
+              "digits": "888800"
+            },
+            {
+              "start_place": 5862,
+              "entropy": 0.918296,
+              "digits": "577775"
+            },
+            {
+              "start_place": 6236,
+              "entropy": 0.918296,
+              "digits": "005005"
+            },
+            {
+              "start_place": 6881,
+              "entropy": 0.918296,
+              "digits": "332323"
+            }
+          ]
+        }
+      }
+    },
+    "7": {
+      "most_possible": 2.8073549220576037,
+      "streams": {
+        "parent_one": {
+          "windows": 9994,
+          "mean": 2.2645815368759967,
+          "stdev": 0.29921260148303086,
+          "minimum": 0.8631205685666312,
+          "maximum": 2.807354922057604,
+          "lowest_windows": [
+            {
+              "start_place": 1313,
+              "entropy": 0.863121,
+              "digits": "0000606"
+            },
+            {
+              "start_place": 5640,
+              "entropy": 0.863121,
+              "digits": "6366636"
+            },
+            {
+              "start_place": 184,
+              "entropy": 0.985228,
+              "digits": "2332332"
+            },
+            {
+              "start_place": 7127,
+              "entropy": 0.985228,
+              "digits": "5225525"
+            },
+            {
+              "start_place": 98,
+              "entropy": 1.148835,
+              "digits": "9552555"
+            },
+            {
+              "start_place": 1869,
+              "entropy": 1.148835,
+              "digits": "2118111"
+            },
+            {
+              "start_place": 2518,
+              "entropy": 1.148835,
+              "digits": "4924444"
+            },
+            {
+              "start_place": 2612,
+              "entropy": 1.148835,
+              "digits": "2557555"
+            },
+            {
+              "start_place": 3854,
+              "entropy": 1.148835,
+              "digits": "3334383"
+            },
+            {
+              "start_place": 8873,
+              "entropy": 1.148835,
+              "digits": "6646616"
+            }
+          ]
+        },
+        "parent_two": {
+          "windows": 9994,
+          "mean": 2.256490400184484,
+          "stdev": 0.3009845789826074,
+          "minimum": 0.8631205685666312,
+          "maximum": 2.807354922057604,
+          "lowest_windows": [
+            {
+              "start_place": 3807,
+              "entropy": 0.863121,
+              "digits": "7700000"
+            },
+            {
+              "start_place": 9557,
+              "entropy": 0.863121,
+              "digits": "1818888"
+            },
+            {
+              "start_place": 854,
+              "entropy": 0.985228,
+              "digits": "8008808"
+            },
+            {
+              "start_place": 2528,
+              "entropy": 0.985228,
+              "digits": "7557557"
+            },
+            {
+              "start_place": 2767,
+              "entropy": 0.985228,
+              "digits": "4555454"
+            },
+            {
+              "start_place": 9692,
+              "entropy": 0.985228,
+              "digits": "0440044"
+            },
+            {
+              "start_place": 2196,
+              "entropy": 1.148835,
+              "digits": "1131511"
+            },
+            {
+              "start_place": 3619,
+              "entropy": 1.148835,
+              "digits": "1111921"
+            },
+            {
+              "start_place": 4014,
+              "entropy": 1.148835,
+              "digits": "1116131"
+            },
+            {
+              "start_place": 6201,
+              "entropy": 1.148835,
+              "digits": "2322922"
+            }
+          ]
+        },
+        "pi": {
+          "windows": 9994,
+          "mean": 2.2649472402075053,
+          "stdev": 0.2960229658421873,
+          "minimum": 0.5916727785823275,
+          "maximum": 2.807354922057604,
+          "lowest_windows": [
+            {
+              "start_place": 761,
+              "entropy": 0.591673,
+              "digits": "4999999"
+            },
+            {
+              "start_place": 6881,
+              "entropy": 0.863121,
+              "digits": "3323233"
+            },
+            {
+              "start_place": 2277,
+              "entropy": 0.985228,
+              "digits": "6222626"
+            },
+            {
+              "start_place": 3844,
+              "entropy": 0.985228,
+              "digits": "1101100"
+            },
+            {
+              "start_place": 6578,
+              "entropy": 0.985228,
+              "digits": "9898989"
+            },
+            {
+              "start_place": 7284,
+              "entropy": 0.985228,
+              "digits": "2202020"
+            },
+            {
+              "start_place": 9645,
+              "entropy": 0.985228,
+              "digits": "0700707"
+            },
+            {
+              "start_place": 1588,
+              "entropy": 1.148835,
+              "digits": "9777727"
+            },
+            {
+              "start_place": 2372,
+              "entropy": 1.148835,
+              "digits": "2207222"
+            },
+            {
+              "start_place": 6327,
+              "entropy": 1.148835,
+              "digits": "4448464"
+            }
+          ]
+        }
+      }
+    },
+    "8": {
+      "most_possible": 3.0,
+      "streams": {
+        "parent_one": {
+          "windows": 9993,
+          "mean": 2.378763287642431,
+          "stdev": 0.2861700654076967,
+          "minimum": 1.0,
+          "maximum": 3.0,
+          "lowest_windows": [
+            {
+              "start_place": 7127,
+              "entropy": 1.0,
+              "digits": "52255252"
+            },
+            {
+              "start_place": 9066,
+              "entropy": 1.061278,
+              "digits": "12511111"
+            },
+            {
+              "start_place": 97,
+              "entropy": 1.298795,
+              "digits": "29552555"
+            },
+            {
+              "start_place": 1311,
+              "entropy": 1.298795,
+              "digits": "22000060"
+            },
+            {
+              "start_place": 1869,
+              "entropy": 1.298795,
+              "digits": "21181112"
+            },
+            {
+              "start_place": 2083,
+              "entropy": 1.298795,
+              "digits": "99931939"
+            },
+            {
+              "start_place": 2611,
+              "entropy": 1.298795,
+              "digits": "22557555"
+            },
+            {
+              "start_place": 5639,
+              "entropy": 1.298795,
+              "digits": "86366636"
+            },
+            {
+              "start_place": 7385,
+              "entropy": 1.298795,
+              "digits": "77737837"
+            },
+            {
+              "start_place": 8870,
+              "entropy": 1.298795,
+              "digits": "60466466"
+            }
+          ]
+        },
+        "parent_two": {
+          "windows": 9993,
+          "mean": 2.3703878379495094,
+          "stdev": 0.2877700934355111,
+          "minimum": 0.8112781244591329,
+          "maximum": 3.0,
+          "lowest_windows": [
+            {
+              "start_place": 9558,
+              "entropy": 0.811278,
+              "digits": "81888818"
+            },
+            {
+              "start_place": 6201,
+              "entropy": 1.061278,
+              "digits": "23229222"
+            },
+            {
+              "start_place": 1994,
+              "entropy": 1.298795,
+              "digits": "42426444"
+            },
+            {
+              "start_place": 2195,
+              "entropy": 1.298795,
+              "digits": "31131511"
+            },
+            {
+              "start_place": 2910,
+              "entropy": 1.298795,
+              "digits": "44844984"
+            },
+            {
+              "start_place": 3806,
+              "entropy": 1.298795,
+              "digits": "37700000"
+            },
+            {
+              "start_place": 6030,
+              "entropy": 1.298795,
+              "digits": "72277737"
+            },
+            {
+              "start_place": 7220,
+              "entropy": 1.298795,
+              "digits": "77730770"
+            },
+            {
+              "start_place": 9477,
+              "entropy": 1.298795,
+              "digits": "66166716"
+            },
+            {
+              "start_place": 853,
+              "entropy": 1.405639,
+              "digits": "78008808"
+            }
+          ]
+        },
+        "pi": {
+          "windows": 9993,
+          "mean": 2.3781748100571565,
+          "stdev": 0.2828277270139945,
+          "minimum": 1.061278124459133,
+          "maximum": 3.0,
+          "lowest_windows": [
+            {
+              "start_place": 760,
+              "entropy": 1.061278,
+              "digits": "34999999"
+            },
+            {
+              "start_place": 1588,
+              "entropy": 1.298795,
+              "digits": "97777279"
+            },
+            {
+              "start_place": 3564,
+              "entropy": 1.298795,
+              "digits": "99898599"
+            },
+            {
+              "start_place": 4751,
+              "entropy": 1.298795,
+              "digits": "88880078"
+            },
+            {
+              "start_place": 6880,
+              "entropy": 1.298795,
+              "digits": "03323233"
+            },
+            {
+              "start_place": 7473,
+              "entropy": 1.298795,
+              "digits": "45449454"
+            },
+            {
+              "start_place": 8879,
+              "entropy": 1.298795,
+              "digits": "00044800"
+            },
+            {
+              "start_place": 850,
+              "entropy": 1.405639,
+              "digits": "17101000"
+            },
+            {
+              "start_place": 1730,
+              "entropy": 1.405639,
+              "digits": "99219222"
+            },
+            {
+              "start_place": 2201,
+              "entropy": 1.405639,
+              "digits": "68683868"
+            }
+          ]
+        }
+      }
+    },
+    "9": {
+      "most_possible": 3.169925001442312,
+      "streams": {
+        "parent_one": {
+          "windows": 9992,
+          "mean": 2.4732000747468654,
+          "stdev": 0.27255639324784386,
+          "minimum": 1.2243944454059859,
+          "maximum": 3.169925001442312,
+          "lowest_windows": [
+            {
+              "start_place": 1870,
+              "entropy": 1.224394,
+              "digits": "118111221"
+            },
+            {
+              "start_place": 9065,
+              "entropy": 1.224394,
+              "digits": "512511111"
+            },
+            {
+              "start_place": 1415,
+              "entropy": 1.351644,
+              "digits": "133117311"
+            },
+            {
+              "start_place": 5245,
+              "entropy": 1.351644,
+              "digits": "226562622"
+            },
+            {
+              "start_place": 8869,
+              "entropy": 1.351644,
+              "digits": "460466466"
+            },
+            {
+              "start_place": 7126,
+              "entropy": 1.392147,
+              "digits": "752255252"
+            },
+            {
+              "start_place": 1311,
+              "entropy": 1.435521,
+              "digits": "220000606"
+            },
+            {
+              "start_place": 3037,
+              "entropy": 1.530493,
+              "digits": "207702772"
+            },
+            {
+              "start_place": 4309,
+              "entropy": 1.530493,
+              "digits": "009080988"
+            },
+            {
+              "start_place": 7525,
+              "entropy": 1.530493,
+              "digits": "644468848"
+            }
+          ]
+        },
+        "parent_two": {
+          "windows": 9992,
+          "mean": 2.4638123204069156,
+          "stdev": 0.27507781315356594,
+          "minimum": 0.9182958340544896,
+          "maximum": 3.1699250014423126,
+          "lowest_windows": [
+            {
+              "start_place": 9557,
+              "entropy": 0.918296,
+              "digits": "181888818"
+            },
+            {
+              "start_place": 6203,
+              "entropy": 1.224394,
+              "digits": "229222112"
+            },
+            {
+              "start_place": 2194,
+              "entropy": 1.351644,
+              "digits": "331131511"
+            },
+            {
+              "start_place": 6030,
+              "entropy": 1.351644,
+              "digits": "722777372"
+            },
+            {
+              "start_place": 8771,
+              "entropy": 1.351644,
+              "digits": "667467766"
+            },
+            {
+              "start_place": 1241,
+              "entropy": 1.392147,
+              "digits": "232353223"
+            },
+            {
+              "start_place": 2114,
+              "entropy": 1.392147,
+              "digits": "003303430"
+            },
+            {
+              "start_place": 2526,
+              "entropy": 1.392147,
+              "digits": "707557557"
+            },
+            {
+              "start_place": 1403,
+              "entropy": 1.435521,
+              "digits": "867888678"
+            },
+            {
+              "start_place": 2097,
+              "entropy": 1.435521,
+              "digits": "401440144"
+            }
+          ]
+        },
+        "pi": {
+          "windows": 9992,
+          "mean": 2.4716198312970294,
+          "stdev": 0.27006093874030473,
+          "minimum": 1.3516441151533922,
+          "maximum": 3.169925001442312,
+          "lowest_windows": [
+            {
+              "start_place": 3564,
+              "entropy": 1.351644,
+              "digits": "998985998"
+            },
+            {
+              "start_place": 6881,
+              "entropy": 1.351644,
+              "digits": "332323342"
+            },
+            {
+              "start_place": 7711,
+              "entropy": 1.435521,
+              "digits": "292952522"
+            },
+            {
+              "start_place": 8878,
+              "entropy": 1.435521,
+              "digits": "800044800"
+            },
+            {
+              "start_place": 759,
+              "entropy": 1.446617,
+              "digits": "134999999"
+            },
+            {
+              "start_place": 852,
+              "entropy": 1.530493,
+              "digits": "101000313"
+            },
+            {
+              "start_place": 1730,
+              "entropy": 1.530493,
+              "digits": "992192221"
+            },
+            {
+              "start_place": 3844,
+              "entropy": 1.530493,
+              "digits": "110110044"
+            },
+            {
+              "start_place": 3961,
+              "entropy": 1.530493,
+              "digits": "441101044"
+            },
+            {
+              "start_place": 4276,
+              "entropy": 1.530493,
+              "digits": "454664645"
+            }
+          ]
+        }
+      }
+    },
     "10": {
       "most_possible": 3.3219280948873626,
       "streams": {

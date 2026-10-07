@@ -80,7 +80,8 @@ def max_entropy(W):
     return -sum(c / W * math.log2(c / W) for c in counts if c)
 
 
-def run(windows=None, include_leading_digit=None, D=None, stream_set=None):
+def run(windows=None, include_leading_digit=None, D=None, stream_set=None,
+        write_page=False):
     """Entropy profiles at every window size, for every stream.
 
     stream_set maps a stream name to (digits, first place); by default it
@@ -117,8 +118,9 @@ def run(windows=None, include_leading_digit=None, D=None, stream_set=None):
                             for i, h in enumerate(prof))
 
     (out_dir / "summary.json").write_text(json.dumps(summary, indent=2) + "\n")
-    from . import entropy_page
-    entropy_page.write(out_dir / "entropy.html", profiles, summary)
+    if write_page:                   # Brian asked for no new pages
+        from . import entropy_page
+        entropy_page.write(out_dir / "entropy.html", profiles, summary)
     return out_dir, summary
 
 

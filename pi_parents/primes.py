@@ -146,38 +146,42 @@ def tasks_for(stream_set, passes, base):
 
 
 def merge(stream_set, pass_name, base):
-    """Join a finished pass's pieces into one prime list and a summary."""
+    """Join a finished pass's pieces into one prime list and a summary.
+
+    Streams are written one at a time, so a few hundred controls never
+    have to sit in memory together.
+    """
     lo, hi = settings.PRIME_PASSES[pass_name]
-    rows, summary = [], dict(
+    summary = dict(
         settings=dict(decimal_places=settings.DECIMAL_PLACES,
                       include_leading_digit=settings.INCLUDE_LEADING_DIGIT,
                       pass_name=pass_name, shortest=lo, longest=hi,
                       trial_bound=TRIAL_BOUND,
                       test="gcd with primorial, then gmpy2.is_prime"),
         streams={})
-    for name, (digits, first_place) in stream_set.items():
-        piece_dir = base / f"pieces_pass_{pass_name}" / name
-        tested, expected, found = {}, {}, {}
-        for path in sorted(piece_dir.glob("*.json")):
-            piece = json.loads(path.read_text())
-            for s, L in piece["primes"]:
-                rows.append((name, first_place + s, L))
-                found[L] = found.get(L, 0) + 1
-            for L, c in piece["tested"].items():
-                tested[int(L)] = tested.get(int(L), 0) + c
-            for L, x in piece["expected"].items():
-                expected[int(L)] = expected.get(int(L), 0.0) + x
-        summary["streams"][name] = dict(
-            primes=sum(found.values()), tested=sum(tested.values()),
-            expected=sum(expected.values()),
-            by_length={L: dict(primes=found.get(L, 0), tested=tested.get(L, 0),
-                               expected=round(expected.get(L, 0.0), 3))
-                       for L in range(lo, hi + 1)})
-    rows.sort()
     with open(base / f"primes_pass_{pass_name}.csv", "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["stream", "start_place", "length"])
-        w.writerows(rows)
+        for name, (digits, first_place) in sorted(stream_set.items()):
+            piece_dir = base / f"pieces_pass_{pass_name}" / name
+            rows, tested, expected, found = [], {}, {}, {}
+            for path in sorted(piece_dir.glob("*.json")):
+                piece = json.loads(path.read_text())
+                for s, L in piece["primes"]:
+                    rows.append((name, first_place + s, L))
+                    found[L] = found.get(L, 0) + 1
+                for L, c in piece["tested"].items():
+                    tested[int(L)] = tested.get(int(L), 0) + c
+                for L, x in piece["expected"].items():
+                    expected[int(L)] = expected.get(int(L), 0.0) + x
+            w.writerows(sorted(rows))
+            summary["streams"][name] = dict(
+                primes=sum(found.values()), tested=sum(tested.values()),
+                expected=sum(expected.values()),
+                by_length={L: dict(primes=found.get(L, 0),
+                                   tested=tested.get(L, 0),
+                                   expected=round(expected.get(L, 0.0), 3))
+                           for L in range(lo, hi + 1)})
     (base / f"summary_pass_{pass_name}.json").write_text(
         json.dumps(summary, indent=1) + "\n")
     return summary

@@ -7,7 +7,7 @@ DECIMAL_PLACES = 10_000
 
 # Entropy window sizes, in digits, each slid one digit at a time.
 # Chosen by Brian; every size is run and reported side by side.
-ENTROPY_WINDOWS = (10, 12, 15, 20, 30, 50)
+ENTROPY_WINDOWS = (3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 20, 30, 50)
 
 # Digit streams are decimals only: Parent One's leading "2", Parent Two's
 # "0" and pi's "3" are left out. Chosen by Brian.

@@ -10,7 +10,7 @@ method and roadmap are in [BRIEF.md](BRIEF.md).
 | Stage | | Status |
 |---|---|---|
 | 1 | Parents generator | Done. Reproduces every check value. |
-| 2 | Entropy profile | Done: windows of 10, 12, 15, 20, 30 and 50 digits. |
+| 2 | Entropy profile | Done: windows of 3 to 10, 12, 15, 20, 30 and 50 digits. |
 | 3 | Prime search | Done on the parents and pi: pass A (1-100 digits) and pass B (101-1,000 digits). |
 | 4 | Structure finder | Not started |
 | 5 | Controls and comparison report | Not started |
@@ -37,9 +37,12 @@ that made it.
 
 Decided:
 
-- Entropy windows of 10, 12, 15, 20, 30 and 50 digits, each sliding one digit
-  at a time, on Parent One, Parent Two and pi. The controls get the same sizes
-  in Stage 5, and all sizes are reported side by side.
+- Entropy windows of 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 20, 30 and 50 digits, each sliding one digit
+  at a time, on Parent One, Parent Two and pi, all reported side by side.
+  (The page covers the first six sizes only; no new pages are made.)
+- No random control streams for now: the parents are compared with pi and
+  with what prime density predicts. The pieces of a stopped random run
+  (pass A on 400 random streams, about 86% done) are kept on disk.
 - Digit streams are decimals only: Parent One's leading "2", Parent Two's "0"
   and pi's "3" are left out.
 - Prime search in two passes, every run from every starting digit: pass A
