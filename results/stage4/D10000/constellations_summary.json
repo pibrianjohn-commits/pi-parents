@@ -1,0 +1,690 @@
+{
+ "settings": {
+  "decimal_places": 10000,
+  "stretches": [
+   20,
+   50,
+   100
+  ],
+  "patterns": {
+   "twin": [
+    [
+     0,
+     2
+    ]
+   ],
+   "cousin": [
+    [
+     0,
+     4
+    ]
+   ],
+   "sexy": [
+    [
+     0,
+     6
+    ]
+   ],
+   "triplet": [
+    [
+     0,
+     2,
+     6
+    ],
+    [
+     0,
+     4,
+     6
+    ]
+   ],
+   "quadruplet": [
+    [
+     0,
+     2,
+     6,
+     8
+    ]
+   ],
+   "quintuplet": [
+    [
+     0,
+     2,
+     6,
+     8,
+     12
+    ],
+    [
+     0,
+     4,
+     6,
+     10,
+     12
+    ]
+   ],
+   "sextuplet": [
+    [
+     0,
+     4,
+     6,
+     10,
+     12,
+     16
+    ]
+   ]
+  }
+ },
+ "side_by_side_expected": {
+  "twin": {
+   "20": {
+    "sets": 7815.277356966856,
+    "distinct": 15.856165308415495
+   },
+   "50": {
+    "sets": 20149.861029667292,
+    "distinct": 25.778389917555693
+   },
+   "100": {
+    "sets": 40624.985248775505,
+    "distinct": 34.35429731800118
+   }
+  },
+  "cousin": {
+   "20": {
+    "sets": 4384.367871707153,
+    "distinct": 18.55253839199153
+   },
+   "50": {
+    "sets": 11346.50229107674,
+    "distinct": 29.924503569202862
+   },
+   "100": {
+    "sets": 22903.48474378548,
+    "distinct": 39.54202647428114
+   }
+  },
+  "sexy": {
+   "20": {
+    "sets": 1213.5277828278417,
+    "distinct": 32.82179614935072
+   },
+   "50": {
+    "sets": 3229.501120020003,
+    "distinct": 53.95985974038854
+   },
+   "100": {
+    "sets": 6575.970331852051,
+    "distinct": 72.05960916598488
+   }
+  },
+  "triplet": {
+   "20": {
+    "sets": 1091.52033150898,
+    "distinct": 8.200868070142782
+   },
+   "50": {
+    "sets": 7904.440681015108,
+    "distinct": 9.668159082744541
+   },
+   "100": {
+    "sets": 33029.07756365588,
+    "distinct": 13.825243273336921
+   }
+  },
+  "quadruplet": {
+   "20": {
+    "sets": 247.41059710597665,
+    "distinct": 1.9493953335662675
+   },
+   "50": {
+    "sets": 4574.900376553,
+    "distinct": 2.010568778260274
+   },
+   "100": {
+    "sets": 38302.82473088734,
+    "distinct": 2.099743512674053
+   }
+  },
+  "quintuplet": {
+   "20": {
+    "sets": 84.70468193433031,
+    "distinct": 2.3168574952280467
+   },
+   "50": {
+    "sets": 3520.0693389976004,
+    "distinct": 3.002359985073516
+   },
+   "100": {
+    "sets": 55941.84371965502,
+    "distinct": 3.0454152459716504
+   }
+  },
+  "sextuplet": {
+   "20": {
+    "sets": 0.885209151612677,
+    "distinct": 0.5873721960392332
+   },
+   "50": {
+    "sets": 152.25239697467947,
+    "distinct": 1.0000881467943246
+   },
+   "100": {
+    "sets": 5466.573426436188,
+    "distinct": 1.0042796084464352
+   }
+  },
+  "sophie_germain": {
+   "20": {
+    "sets": 8102.693537286651,
+    "distinct": 14.462808448978995
+   },
+   "50": {
+    "sets": 20926.564919596447,
+    "distinct": 20.77376413609
+   },
+   "100": {
+    "sets": 42213.89544408391,
+    "distinct": 26.52650102815263
+   }
+  }
+ },
+ "streams": {
+  "parent_one": {
+   "membership": {
+    "A": {
+     "twin": 6134,
+     "cousin": 5532,
+     "sexy": 7601,
+     "sophie_germain": 4703,
+     "safe": 2971,
+     "triplet": 4307,
+     "quadruplet": 2583,
+     "quintuplet": 2699,
+     "sextuplet": 1717,
+     "primes": 21257
+    },
+    "B": {
+     "twin": 32,
+     "cousin": 40,
+     "sexy": 79,
+     "sophie_germain": 16,
+     "safe": 10,
+     "triplet": 0,
+     "quadruplet": 0,
+     "quintuplet": 0,
+     "sextuplet": 0,
+     "primes": 8795
+    }
+   },
+   "membership_expected": {
+    "A": {
+     "twin": 6203.36717839764,
+     "cousin": 5486.325804077652,
+     "sexy": 7620.518400629271,
+     "sophie_germain": 4690.480034964952,
+     "safe": 3235.800720657838,
+     "triplet": 4342.965829128116,
+     "quadruplet": 2609.9134007252565,
+     "quintuplet": 2723.1749875126125,
+     "sextuplet": 1681.408237172462
+    },
+    "B": {
+     "twin": 39.655981447959554,
+     "cousin": 39.655981447959554,
+     "sexy": 79.10616799764875,
+     "sophie_germain": 19.795110804365624,
+     "safe": 19.861004276854015,
+     "triplet": 0.6147612378719456,
+     "quadruplet": 0.0017489712911432642,
+     "quintuplet": 3.4715368423141545e-05,
+     "sextuplet": 1.2379936307753134e-07
+    }
+   },
+   "side_by_side": {
+    "twin": {
+     "20": {
+      "sets": 7774,
+      "distinct": 14
+     },
+     "50": {
+      "sets": 20157,
+      "distinct": 24
+     },
+     "100": {
+      "sets": 40544,
+      "distinct": 33
+     }
+    },
+    "cousin": {
+     "20": {
+      "sets": 4711,
+      "distinct": 21
+     },
+     "50": {
+      "sets": 12337,
+      "distinct": 31
+     },
+     "100": {
+      "sets": 24926,
+      "distinct": 42
+     }
+    },
+    "sexy": {
+     "20": {
+      "sets": 1261,
+      "distinct": 33
+     },
+     "50": {
+      "sets": 3399,
+      "distinct": 60
+     },
+     "100": {
+      "sets": 7000,
+      "distinct": 78
+     }
+    },
+    "triplet": {
+     "20": {
+      "sets": 1154,
+      "distinct": 8
+     },
+     "50": {
+      "sets": 8353,
+      "distinct": 8
+     },
+     "100": {
+      "sets": 36383,
+      "distinct": 12
+     }
+    },
+    "quadruplet": {
+     "20": {
+      "sets": 202,
+      "distinct": 2
+     },
+     "50": {
+      "sets": 4294,
+      "distinct": 2
+     },
+     "100": {
+      "sets": 41867,
+      "distinct": 2
+     }
+    },
+    "quintuplet": {
+     "20": {
+      "sets": 147,
+      "distinct": 2
+     },
+     "50": {
+      "sets": 4182,
+      "distinct": 3
+     },
+     "100": {
+      "sets": 75344,
+      "distinct": 3
+     }
+    },
+    "sextuplet": {
+     "20": {
+      "sets": 0,
+      "distinct": 0
+     },
+     "50": {
+      "sets": 214,
+      "distinct": 1
+     },
+     "100": {
+      "sets": 8749,
+      "distinct": 1
+     }
+    },
+    "sophie_germain": {
+     "20": {
+      "sets": 8456,
+      "distinct": 11
+     },
+     "50": {
+      "sets": 21630,
+      "distinct": 18
+     },
+     "100": {
+      "sets": 43465,
+      "distinct": 20
+     }
+    }
+   }
+  },
+  "parent_two": {
+   "membership": {
+    "A": {
+     "twin": 6040,
+     "cousin": 5378,
+     "sexy": 7434,
+     "sophie_germain": 4606,
+     "safe": 3054,
+     "triplet": 4233,
+     "quadruplet": 2552,
+     "quintuplet": 2649,
+     "sextuplet": 1558,
+     "primes": 20677
+    },
+    "B": {
+     "twin": 51,
+     "cousin": 36,
+     "sexy": 75,
+     "sophie_germain": 16,
+     "safe": 13,
+     "triplet": 1,
+     "quadruplet": 0,
+     "quintuplet": 0,
+     "sextuplet": 0,
+     "primes": 8369
+    }
+   },
+   "membership_expected": {
+    "A": {
+     "twin": 6048.9932994612955,
+     "cousin": 5330.476024215519,
+     "sexy": 7380.154064010803,
+     "sophie_germain": 4595.097376420779,
+     "safe": 3166.405365612026,
+     "triplet": 4229.453141910475,
+     "quadruplet": 2566.6948799864604,
+     "quintuplet": 2669.327184546042,
+     "sextuplet": 1637.8467243803896
+    },
+    "B": {
+     "twin": 38.3588949371029,
+     "cousin": 38.3588949371029,
+     "sexy": 76.51725938110165,
+     "sophie_germain": 19.147408799480413,
+     "safe": 19.21161666279997,
+     "triplet": 0.5990290395291115,
+     "quadruplet": 0.001708293188773776,
+     "quintuplet": 3.3922036953799624e-05,
+     "sextuplet": 1.2092073890232544e-07
+    }
+   },
+   "side_by_side": {
+    "twin": {
+     "20": {
+      "sets": 8416,
+      "distinct": 11
+     },
+     "50": {
+      "sets": 21498,
+      "distinct": 21
+     },
+     "100": {
+      "sets": 43035,
+      "distinct": 29
+     }
+    },
+    "cousin": {
+     "20": {
+      "sets": 4324,
+      "distinct": 16
+     },
+     "50": {
+      "sets": 11099,
+      "distinct": 25
+     },
+     "100": {
+      "sets": 22542,
+      "distinct": 39
+     }
+    },
+    "sexy": {
+     "20": {
+      "sets": 1158,
+      "distinct": 29
+     },
+     "50": {
+      "sets": 3168,
+      "distinct": 54
+     },
+     "100": {
+      "sets": 6391,
+      "distinct": 73
+     }
+    },
+    "triplet": {
+     "20": {
+      "sets": 922,
+      "distinct": 8
+     },
+     "50": {
+      "sets": 6622,
+      "distinct": 9
+     },
+     "100": {
+      "sets": 29270,
+      "distinct": 10
+     }
+    },
+    "quadruplet": {
+     "20": {
+      "sets": 247,
+      "distinct": 1
+     },
+     "50": {
+      "sets": 3788,
+      "distinct": 2
+     },
+     "100": {
+      "sets": 32516,
+      "distinct": 2
+     }
+    },
+    "quintuplet": {
+     "20": {
+      "sets": 163,
+      "distinct": 1
+     },
+     "50": {
+      "sets": 2493,
+      "distinct": 3
+     },
+     "100": {
+      "sets": 26530,
+      "distinct": 3
+     }
+    },
+    "sextuplet": {
+     "20": {
+      "sets": 0,
+      "distinct": 0
+     },
+     "50": {
+      "sets": 43,
+      "distinct": 1
+     },
+     "100": {
+      "sets": 1054,
+      "distinct": 1
+     }
+    },
+    "sophie_germain": {
+     "20": {
+      "sets": 8171,
+      "distinct": 13
+     },
+     "50": {
+      "sets": 21060,
+      "distinct": 18
+     },
+     "100": {
+      "sets": 42506,
+      "distinct": 24
+     }
+    }
+   }
+  },
+  "pi": {
+   "membership": {
+    "A": {
+     "twin": 6055,
+     "cousin": 5285,
+     "sexy": 7448,
+     "sophie_germain": 4639,
+     "safe": 3055,
+     "triplet": 4258,
+     "quadruplet": 2598,
+     "quintuplet": 2686,
+     "sextuplet": 1613,
+     "primes": 20884
+    },
+    "B": {
+     "twin": 51,
+     "cousin": 42,
+     "sexy": 63,
+     "sophie_germain": 17,
+     "safe": 12,
+     "triplet": 1,
+     "quadruplet": 0,
+     "quintuplet": 0,
+     "sextuplet": 0,
+     "primes": 8547
+    }
+   },
+   "membership_expected": {
+    "A": {
+     "twin": 6072.7714698221425,
+     "cousin": 5354.644774730487,
+     "sexy": 7430.06180674453,
+     "sophie_germain": 4605.437874978471,
+     "safe": 3177.1627686304796,
+     "triplet": 4233.804466546925,
+     "quadruplet": 2564.2292034224156,
+     "quintuplet": 2670.8581893231462,
+     "sextuplet": 1641.087531397693
+    },
+    "B": {
+     "twin": 38.98582974698203,
+     "cousin": 38.98582974698203,
+     "sexy": 77.76808005511499,
+     "sophie_germain": 19.46038903862874,
+     "safe": 19.52557314354891,
+     "triplet": 0.6081383797092692,
+     "quadruplet": 0.0017332912240945783,
+     "quintuplet": 3.4390825101034664e-05,
+     "sextuplet": 1.224941822235674e-07
+    }
+   },
+   "side_by_side": {
+    "twin": {
+     "20": {
+      "sets": 7933,
+      "distinct": 17
+     },
+     "50": {
+      "sets": 20371,
+      "distinct": 29
+     },
+     "100": {
+      "sets": 40918,
+      "distinct": 34
+     }
+    },
+    "cousin": {
+     "20": {
+      "sets": 4165,
+      "distinct": 20
+     },
+     "50": {
+      "sets": 10895,
+      "distinct": 31
+     },
+     "100": {
+      "sets": 21995,
+      "distinct": 39
+     }
+    },
+    "sexy": {
+     "20": {
+      "sets": 1245,
+      "distinct": 28
+     },
+     "50": {
+      "sets": 3325,
+      "distinct": 56
+     },
+     "100": {
+      "sets": 6704,
+      "distinct": 69
+     }
+    },
+    "triplet": {
+     "20": {
+      "sets": 1085,
+      "distinct": 8
+     },
+     "50": {
+      "sets": 8202,
+      "distinct": 9
+     },
+     "100": {
+      "sets": 34033,
+      "distinct": 13
+     }
+    },
+    "quadruplet": {
+     "20": {
+      "sets": 344,
+      "distinct": 2
+     },
+     "50": {
+      "sets": 5338,
+      "distinct": 2
+     },
+     "100": {
+      "sets": 43517,
+      "distinct": 2
+     }
+    },
+    "quintuplet": {
+     "20": {
+      "sets": 127,
+      "distinct": 2
+     },
+     "50": {
+      "sets": 4557,
+      "distinct": 3
+     },
+     "100": {
+      "sets": 70144,
+      "distinct": 3
+     }
+    },
+    "sextuplet": {
+     "20": {
+      "sets": 0,
+      "distinct": 0
+     },
+     "50": {
+      "sets": 155,
+      "distinct": 1
+     },
+     "100": {
+      "sets": 5895,
+      "distinct": 1
+     }
+    },
+    "sophie_germain": {
+     "20": {
+      "sets": 8209,
+      "distinct": 15
+     },
+     "50": {
+      "sets": 21257,
+      "distinct": 20
+     },
+     "100": {
+      "sets": 42694,
+      "distinct": 25
+     }
+    }
+   }
+  }
+ }
+}

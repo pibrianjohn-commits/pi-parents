@@ -12,7 +12,7 @@ method and roadmap are in [BRIEF.md](BRIEF.md).
 | 1 | Parents generator | Done. Reproduces every check value. |
 | 2 | Entropy profile | Done: windows of 3 to 10, 12, 15, 20, 30 and 50 digits. |
 | 3 | Prime search | Done on the parents and pi: pass A (1-100 digits) and pass B (101-1,000 digits). |
-| 4 | Structure finder | Not started |
+| 4 | Structure finder | Done on the saved primes (up to 1,000 digits): towers, overlaps, bridges, covers, constellations, low entropy. |
 | 5 | Controls and comparison report | Not started |
 | 6 | Launchable app | Not started |
 | 7 | 100,000 digits | Not started |
@@ -29,6 +29,13 @@ method and roadmap are in [BRIEF.md](BRIEF.md).
   prime found, one per line as stream, start place, length. Place 1 is the
   first decimal. `summary_pass_*.json` has the counts for each length
   against what chance would give.
+- `results/stage4/D10000/report.txt`: Stage 4 in plain tables, Parent One,
+  Parent Two and pi side by side, each against prime density's prediction.
+  `towers_*.csv` lists every prime with its depth, prime prefixes, prime
+  suffixes and number of nested primes; `membership_*.csv` gives each
+  prime's constellation families. The full nested lists
+  (`nested_*.csv.gz`) and close constellation sets (`close_sets_*.csv`) are
+  too big for git and are remade by running Stage 4.
 
 ## Settings
 
@@ -53,9 +60,24 @@ Decided:
 - Results are reported in plain English with the key numbers; no more web
   pages or charts.
 
-Still to confirm:
+- Constellations, two tests: (a) which families each prime belongs to as a
+  number (twin, cousin, sexy, Sophie Germain and its safe-prime partner,
+  triplet, quadruplet, quintuplet, sextuplet); (b) every member appearing
+  as a run within 20, 50 or 100 digits.
+- Expected counts come from prime density (the Stage 3 chance, extended
+  with the Hardy-Littlewood factors for groups of primes) and, for
+  constellation sets, from each L-digit number turning up at a place one
+  time in 10^L.
 
-- What counts as a "constellation" in a digit stream (Stage 4).
+Working definitions, open to change:
+
+- Giant: a prime of 101 digits or more (Pass B). Brian's named giants
+  (G1700, G1730, M2050, S1400) are longer than the 1,000-digit search, so
+  they are checked directly rather than found.
+- Prefix, suffix and nested are separate: same first digit, same last digit,
+  or strictly inside touching neither end. Depth counts any of the three.
+- Low-entropy digits: those inside the lowest-entropy windows, taking as many
+  of the lowest values as stay within 5% of windows.
 
 ## For whoever works on the code
 
@@ -65,5 +87,8 @@ Python 3 with gmpy2 (`pip install -r requirements.txt`).
 python3 -m pi_parents.parents          # Stage 1: regenerate data/
 python3 -m pi_parents.entropy [SIZES..] # Stage 2: entropy profiles into results/
 python3 -m pi_parents.primes [A|B|AB]  # Stage 3: prime search, all cores, resumes if stopped
+python3 -m pi_parents.structure        # Stage 4: towers, overlaps, bridges, covers, low entropy
+python3 -m pi_parents.constellations   # Stage 4: constellation tests (a) and (b)
+python3 -m pi_parents.report           # Stage 4: plain-text report
 python3 -m unittest discover -s tests -t .
 ```

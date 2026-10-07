@@ -1,0 +1,2846 @@
+{
+ "settings": {
+  "decimal_places": 10000,
+  "longest": 1000,
+  "giant_min": 101,
+  "low_entropy_share": 0.05,
+  "entropy_windows": [
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   12,
+   15,
+   20,
+   30,
+   50
+  ]
+ },
+ "streams": {
+  "parent_one": {
+   "primes": 30052,
+   "primes_by_band": {
+    "observed": {
+     "1-100": 21257.0,
+     "101-1000": 8795.0,
+     "1-1000": 30052.0
+    },
+    "expected": {
+     "1-100": 21477.63891581109,
+     "101-1000": 8894.317495945665,
+     "1-1000": 30371.95641175675
+    }
+   },
+   "towers": {
+    "observed": {
+     "prefix_pairs": 48997.0,
+     "with_prefix": 21298.0,
+     "suffix_pairs": 94438.0,
+     "with_suffix": 23976.0,
+     "nested_pairs": 8529571.0,
+     "with_nested": 22491.0,
+     "with_prefix_and_suffix": 20112.0
+    },
+    "expected": {
+     "prefix_pairs": 49805.43423242315,
+     "with_prefix": 21612.53060289038,
+     "suffix_pairs": 100928.59017354189,
+     "with_suffix": 24953.81964667245,
+     "nested_pairs": 8632654.763962712,
+     "with_nested": 22718.3762647162,
+     "with_prefix_and_suffix": 20851.82017205454
+    }
+   },
+   "towers_by_outer_band": {
+    "prefix": {
+     "observed": {
+      "1-100": 23685.0,
+      "101-1000": 25312.0
+     },
+     "expected": {
+      "1-100": 24052.001229795103,
+      "101-1000": 25753.43300262804
+     }
+    },
+    "suffix": {
+     "observed": {
+      "1-100": 43588.0,
+      "101-1000": 50850.0
+     },
+     "expected": {
+      "1-100": 47265.61343321012,
+      "101-1000": 53662.97674033177
+     }
+    },
+    "nested": {
+     "observed": {
+      "1-100": 504613.0,
+      "101-1000": 8024958.0
+     },
+     "expected": {
+      "1-100": 524660.2883454765,
+      "101-1000": 8107994.4756172355
+     }
+    }
+   },
+   "depth": {
+    "deepest": 49,
+    "chain": [
+     [
+      234,
+      996
+     ],
+     [
+      291,
+      936
+     ],
+     [
+      294,
+      924
+     ],
+     [
+      368,
+      848
+     ],
+     [
+      378,
+      814
+     ],
+     [
+      389,
+      802
+     ],
+     [
+      394,
+      754
+     ],
+     [
+      397,
+      717
+     ],
+     [
+      403,
+      708
+     ],
+     [
+      405,
+      606
+     ],
+     [
+      407,
+      545
+     ],
+     [
+      410,
+      540
+     ],
+     [
+      411,
+      539
+     ],
+     [
+      428,
+      520
+     ],
+     [
+      434,
+      406
+     ],
+     [
+      434,
+      397
+     ],
+     [
+      465,
+      352
+     ],
+     [
+      483,
+      325
+     ],
+     [
+      490,
+      317
+     ],
+     [
+      495,
+      291
+     ],
+     [
+      500,
+      283
+     ],
+     [
+      512,
+      266
+     ],
+     [
+      521,
+      254
+     ],
+     [
+      537,
+      230
+     ],
+     [
+      547,
+      220
+     ],
+     [
+      553,
+      180
+     ],
+     [
+      564,
+      166
+     ],
+     [
+      574,
+      141
+     ],
+     [
+      577,
+      127
+     ],
+     [
+      588,
+      115
+     ],
+     [
+      593,
+      104
+     ],
+     [
+      620,
+      77
+     ],
+     [
+      623,
+      74
+     ],
+     [
+      626,
+      65
+     ],
+     [
+      631,
+      60
+     ],
+     [
+      643,
+      34
+     ],
+     [
+      650,
+      27
+     ],
+     [
+      652,
+      25
+     ],
+     [
+      654,
+      23
+     ],
+     [
+      658,
+      18
+     ],
+     [
+      662,
+      14
+     ],
+     [
+      663,
+      13
+     ],
+     [
+      663,
+      10
+     ],
+     [
+      665,
+      8
+     ],
+     [
+      667,
+      6
+     ],
+     [
+      668,
+      5
+     ],
+     [
+      669,
+      4
+     ],
+     [
+      670,
+      3
+     ],
+     [
+      671,
+      2
+     ]
+    ],
+    "primes_by_depth": {
+     "1": 4774,
+     "2": 2710,
+     "3": 2228,
+     "4": 1850,
+     "5": 1483,
+     "6": 1326,
+     "7": 1171,
+     "8": 983,
+     "9": 927,
+     "10": 824,
+     "11": 751,
+     "12": 683,
+     "13": 605,
+     "14": 566,
+     "15": 543,
+     "16": 501,
+     "17": 503,
+     "18": 505,
+     "19": 454,
+     "20": 421,
+     "21": 375,
+     "22": 368,
+     "23": 387,
+     "24": 327,
+     "25": 326,
+     "26": 320,
+     "27": 306,
+     "28": 289,
+     "29": 271,
+     "30": 263,
+     "31": 238,
+     "32": 249,
+     "33": 257,
+     "34": 219,
+     "35": 218,
+     "36": 227,
+     "37": 225,
+     "38": 203,
+     "39": 219,
+     "40": 179,
+     "41": 195,
+     "42": 155,
+     "43": 135,
+     "44": 112,
+     "45": 84,
+     "46": 49,
+     "47": 34,
+     "48": 10,
+     "49": 4
+    }
+   },
+   "overlaps": {
+    "observed": {
+     "pairs": 2903025.0,
+     "mean_shared": 127.93085453966121,
+     "shared_1_10": 445369.0,
+     "shared_11_100": 1263088.0,
+     "shared_101_999": 1194568.0
+    },
+    "expected": {
+     "pairs": 2969400.43025289,
+     "mean_shared": 125.38739295699126,
+     "shared_1_10": 457395.9978923979,
+     "shared_11_100": 1310281.6461208898,
+     "shared_101_999": 1201722.7862396026
+    }
+   },
+   "stack": {
+    "2-30": {
+     "observed_mean": 12.1043,
+     "expected_mean": 11.976930947063,
+     "observed_max": 39.0,
+     "max_at_place": 1408
+    },
+    "1-100": {
+     "observed_mean": 39.3315,
+     "expected_mean": 40.50202844557961,
+     "observed_max": 80.0,
+     "max_at_place": 1398
+    },
+    "101-1000": {
+     "observed_mean": 342.1999,
+     "expected_mean": 342.4857844538314,
+     "observed_max": 458.0,
+     "max_at_place": 1190
+    },
+    "1-1000": {
+     "observed_mean": 381.5314,
+     "expected_mean": 382.9878128994086,
+     "observed_max": 521.0,
+     "max_at_place": 1190
+    }
+   },
+   "bridges": {
+    "giants": 8795,
+    "no_prefix": 435,
+    "no_suffix": 18,
+    "meet": 2569,
+    "gap": 5774,
+    "bridged": 4765,
+    "bridges": 97585,
+    "examples": [
+     {
+      "giant": [
+       0,
+       686
+      ],
+      "prefix": 3,
+      "suffix": 556,
+      "gap": [
+       3,
+       130
+      ],
+      "bridge": [
+       1,
+       137
+      ]
+     },
+     {
+      "giant": [
+       1,
+       104
+      ],
+      "prefix": 2,
+      "suffix": 64,
+      "gap": [
+       3,
+       41
+      ],
+      "bridge": [
+       2,
+       44
+      ]
+     },
+     {
+      "giant": [
+       6,
+       150
+      ],
+      "prefix": 52,
+      "suffix": 44,
+      "gap": [
+       58,
+       112
+      ],
+      "bridge": [
+       19,
+       122
+      ]
+     },
+     {
+      "giant": [
+       6,
+       696
+      ],
+      "prefix": 256,
+      "suffix": 205,
+      "gap": [
+       262,
+       497
+      ],
+      "bridge": [
+       49,
+       643
+      ]
+     },
+     {
+      "giant": [
+       7,
+       724
+      ],
+      "prefix": 39,
+      "suffix": 196,
+      "gap": [
+       46,
+       535
+      ],
+      "bridge": [
+       24,
+       705
+      ]
+     }
+    ]
+   },
+   "covers": {
+    "giants": 8795,
+    "overlapping_pairs": 1972020,
+    "pairs_with_cover": 1334710,
+    "cover_primes": 7489
+   },
+   "low_entropy": {
+    "3": {
+     "cutoff_bits": 0.0,
+     "share_of_windows": 0.008701740348069614,
+     "share_of_digits": 0.0251,
+     "stack_2-30": {
+      "low_observed": 12.063745019920319,
+      "low_expected": 12.613829081464901,
+      "rest_observed": 12.105344137860293,
+      "rest_expected": 11.960533220964436
+     },
+     "stack_1-100": {
+      "low_observed": 39.79282868525896,
+      "low_expected": 41.51309725647674,
+      "rest_observed": 39.31962252538722,
+      "rest_expected": 40.47599723504159
+     },
+     "stack_101-1000": {
+      "low_observed": 352.800796812749,
+      "low_expected": 350.8739309550617,
+      "rest_observed": 341.92696686839673,
+      "rest_expected": 342.26982130152766
+     },
+     "stack_1-1000": {
+      "low_observed": 392.59362549800795,
+      "low_expected": 392.3870282115362,
+      "rest_observed": 381.24658939378395,
+      "rest_expected": 382.7458185365669
+     },
+     "starts": {
+      "low_observed": 2.8366533864541834,
+      "low_expected": 3.142964573484113,
+      "rest_observed": 3.009539439942558,
+      "rest_expected": 3.03447248987714
+     }
+    },
+    "4": {
+     "cutoff_bits": 0.811278124,
+     "share_of_windows": 0.0369110733219966,
+     "share_of_digits": 0.11,
+     "stack_2-30": {
+      "low_observed": 12.386363636363637,
+      "low_expected": 12.346956402354293,
+      "rest_observed": 12.069438202247191,
+      "rest_expected": 11.93119746382475
+     },
+     "stack_1-100": {
+      "low_observed": 39.61818181818182,
+      "low_expected": 41.00544079029836,
+      "rest_observed": 39.296067415730334,
+      "rest_expected": 40.43980894229977
+     },
+     "stack_101-1000": {
+      "low_observed": 344.1472727272727,
+      "low_expected": 343.2644045085567,
+      "rest_observed": 341.9592134831461,
+      "rest_expected": 342.38955051448335
+     },
+     "stack_1-1000": {
+      "low_observed": 383.76545454545453,
+      "low_expected": 384.2698452988528,
+      "rest_observed": 381.2552808988764,
+      "rest_expected": 382.8293594567807
+     },
+     "starts": {
+      "low_observed": 2.9872727272727273,
+      "low_expected": 3.1030947444551327,
+      "rest_observed": 3.0074157303370788,
+      "rest_expected": 3.029050808186079
+     }
+    },
+    "5": {
+     "cutoff_bits": 0.970950594,
+     "share_of_windows": 0.012805122048819529,
+     "share_of_digits": 0.0481,
+     "stack_2-30": {
+      "low_observed": 12.937629937629938,
+      "low_expected": 12.781429660645433,
+      "rest_observed": 12.062191406660363,
+      "rest_expected": 11.936279210406507
+     },
+     "stack_1-100": {
+      "low_observed": 40.4968814968815,
+      "low_expected": 41.66043263744697,
+      "rest_observed": 39.27261266939804,
+      "rest_expected": 40.443493681813656
+     },
+     "stack_101-1000": {
+      "low_observed": 347.5405405405405,
+      "low_expected": 346.3724903595339,
+      "rest_observed": 341.9300346675071,
+      "rest_expected": 342.2893871914464
+     },
+     "stack_1-1000": {
+      "low_observed": 388.03742203742206,
+      "low_expected": 388.0329229969786,
+      "rest_observed": 381.20264733690516,
+      "rest_expected": 382.73288087325767
+     },
+     "starts": {
+      "low_observed": 3.0187110187110187,
+      "low_expected": 3.227410747845956,
+      "rest_observed": 3.0045172812270198,
+      "rest_expected": 3.027583973321026
+     }
+    },
+    "6": {
+     "cutoff_bits": 1.251629167,
+     "share_of_windows": 0.012706353176588294,
+     "share_of_digits": 0.0529,
+     "stack_2-30": {
+      "low_observed": 12.391304347826088,
+      "low_expected": 12.519315317721876,
+      "rest_observed": 12.088269454123113,
+      "rest_expected": 11.946636222949543
+     },
+     "stack_1-100": {
+      "low_observed": 39.10775047258979,
+      "low_expected": 41.01579584249081,
+      "rest_observed": 39.34399746594868,
+      "rest_expected": 40.47333211436158
+     },
+     "stack_101-1000": {
+      "low_observed": 335.4952741020794,
+      "low_expected": 333.3890947938573,
+      "rest_observed": 342.57438496462885,
+      "rest_expected": 342.9938774566955
+     },
+     "stack_1-1000": {
+      "low_observed": 374.6030245746692,
+      "low_expected": 374.40489063634584,
+      "rest_observed": 381.91838243057754,
+      "rest_expected": 383.4672095710547
+     },
+     "starts": {
+      "low_observed": 3.0378071833648392,
+      "low_expected": 3.15883778019037,
+      "rest_observed": 3.003378735086052,
+      "rest_expected": 3.030401354243063
+     }
+    },
+    "7": {
+     "cutoff_bits": 1.664497779,
+     "share_of_windows": 0.04122473484090454,
+     "share_of_digits": 0.1625,
+     "stack_2-30": {
+      "low_observed": 12.441846153846154,
+      "low_expected": 12.390314561394522,
+      "rest_observed": 12.038805970149253,
+      "rest_expected": 11.896722186073301
+     },
+     "stack_1-100": {
+      "low_observed": 40.05230769230769,
+      "low_expected": 41.40467408650846,
+      "rest_observed": 39.19164179104477,
+      "rest_expected": 40.32688824659343
+     },
+     "stack_101-1000": {
+      "low_observed": 342.27076923076925,
+      "low_expected": 341.87091006411,
+      "rest_observed": 342.18614925373134,
+      "rest_expected": 342.6050884398967
+     },
+     "stack_1-1000": {
+      "low_observed": 382.32307692307694,
+      "low_expected": 383.27558415061606,
+      "rest_observed": 381.37779104477613,
+      "rest_expected": 382.93197668648776
+     },
+     "starts": {
+      "low_observed": 3.067076923076923,
+      "low_expected": 3.1229747405113337,
+      "rest_observed": 2.9931940298507462,
+      "rest_expected": 3.020551935334428
+     }
+    },
+    "8": {
+     "cutoff_bits": 1.811278124,
+     "share_of_windows": 0.049034324026818774,
+     "share_of_digits": 0.1944,
+     "stack_2-30": {
+      "low_observed": 12.272633744855968,
+      "low_expected": 12.218986190028968,
+      "rest_observed": 12.06367924528302,
+      "rest_expected": 11.918520396873596
+     },
+     "stack_1-100": {
+      "low_observed": 39.34104938271605,
+      "low_expected": 40.97424754147743,
+      "rest_observed": 39.3291956305859,
+      "rest_expected": 40.38807686633118
+     },
+     "stack_101-1000": {
+      "low_observed": 342.6054526748971,
+      "low_expected": 343.0881364052866,
+      "rest_observed": 342.10203574975174,
+      "rest_expected": 342.34043040794893
+     },
+     "stack_1-1000": {
+      "low_observed": 381.94650205761315,
+      "low_expected": 384.0623839467616,
+      "rest_observed": 381.43123138033764,
+      "rest_expected": 382.7285072742778
+     },
+     "starts": {
+      "low_observed": 3.066872427983539,
+      "low_expected": 3.1017610655126706,
+      "rest_observed": 2.990317775571003,
+      "rest_expected": 3.0216153054121295
+     }
+    },
+    "9": {
+     "cutoff_bits": 1.974937501,
+     "share_of_windows": 0.04823859087269816,
+     "share_of_digits": 0.2062,
+     "stack_2-30": {
+      "low_observed": 12.258971871968962,
+      "low_expected": 12.157769131399826,
+      "rest_observed": 12.064121945074326,
+      "rest_expected": 11.929955848032698
+     },
+     "stack_1-100": {
+      "low_observed": 39.62754607177497,
+      "low_expected": 40.92959954321599,
+      "rest_observed": 39.254598135550516,
+      "rest_expected": 40.39096122419813
+     },
+     "stack_101-1000": {
+      "low_observed": 337.70611057225995,
+      "low_expected": 338.6705603110369,
+      "rest_observed": 343.36722096245904,
+      "rest_expected": 343.4768391505362
+     },
+     "stack_1-1000": {
+      "low_observed": 377.33365664403493,
+      "low_expected": 379.6001598542505,
+      "rest_observed": 382.62181909800955,
+      "rest_expected": 383.8678003747318
+     },
+     "starts": {
+      "low_observed": 3.065470417070805,
+      "low_expected": 3.0921110394283673,
+      "rest_observed": 2.989543965734442,
+      "rest_expected": 3.022930643544401
+     }
+    },
+    "10": {
+     "cutoff_bits": 2.046439345,
+     "share_of_windows": 0.04153738364528075,
+     "share_of_digits": 0.1888,
+     "stack_2-30": {
+      "low_observed": 12.046080508474576,
+      "low_expected": 11.921194356225175,
+      "rest_observed": 12.11785009861933,
+      "rest_expected": 11.98990317136056
+     },
+     "stack_1-100": {
+      "low_observed": 39.23940677966102,
+      "low_expected": 40.63855642427296,
+      "rest_observed": 39.35293392504931,
+      "rest_expected": 40.47025270300405
+     },
+     "stack_101-1000": {
+      "low_observed": 342.02012711864404,
+      "low_expected": 342.7064426764955,
+      "rest_observed": 342.24174063116374,
+      "rest_expected": 342.43442810220535
+     },
+     "stack_1-1000": {
+      "low_observed": 381.2595338983051,
+      "low_expected": 383.34499910076613,
+      "rest_observed": 381.594674556213,
+      "rest_expected": 382.904680805207
+     },
+     "starts": {
+      "low_observed": 3.0217161016949152,
+      "low_expected": 3.069266198728097,
+      "rest_observed": 3.0013560157790926,
+      "rest_expected": 3.0297314877413837
+     }
+    },
+    "12": {
+     "cutoff_bits": 2.229573959,
+     "share_of_windows": 0.049454399839823804,
+     "share_of_digits": 0.246,
+     "stack_2-30": {
+      "low_observed": 12.369918699186991,
+      "low_expected": 12.20446994079038,
+      "rest_observed": 12.01763925729443,
+      "rest_expected": 11.902694087040539
+     },
+     "stack_1-100": {
+      "low_observed": 39.65813008130081,
+      "low_expected": 40.89977463658327,
+      "rest_observed": 39.224933687002654,
+      "rest_expected": 40.37225979440336
+     },
+     "stack_101-1000": {
+      "low_observed": 341.1780487804878,
+      "low_expected": 341.56644889418425,
+      "rest_observed": 342.53328912466844,
+      "rest_expected": 342.78572682475067
+     },
+     "stack_1-1000": {
+      "low_observed": 380.8361788617886,
+      "low_expected": 382.4662235307652,
+      "rest_observed": 381.7582228116711,
+      "rest_expected": 383.1579866191517
+     },
+     "starts": {
+      "low_observed": 3.080081300813008,
+      "low_expected": 3.117291725915951,
+      "rest_observed": 2.980769230769231,
+      "rest_expected": 3.0110634968174415
+     }
+    },
+    "15": {
+     "cutoff_bits": 2.463458299,
+     "share_of_windows": 0.048868415782094936,
+     "share_of_digits": 0.2526,
+     "stack_2-30": {
+      "low_observed": 12.561361836896278,
+      "low_expected": 12.247660410503213,
+      "rest_observed": 11.94982606368745,
+      "rest_expected": 11.885432067661077
+     },
+     "stack_1-100": {
+      "low_observed": 40.05067300079177,
+      "low_expected": 41.2187959602716,
+      "rest_observed": 39.08843992507359,
+      "rest_expected": 40.25978135672332
+     },
+     "stack_101-1000": {
+      "low_observed": 345.63420427553444,
+      "low_expected": 346.73711975809357,
+      "rest_observed": 341.0392025689055,
+      "rest_expected": 341.04895371011094
+     },
+     "stack_1-1000": {
+      "low_observed": 385.68487727632623,
+      "low_expected": 387.95591571836286,
+      "rest_observed": 380.1276424939791,
+      "rest_expected": 381.30873506683196
+     },
+     "starts": {
+      "low_observed": 3.1187648456057007,
+      "low_expected": 3.135834661614372,
+      "rest_observed": 2.9668183034519666,
+      "rest_expected": 3.0038584501630785
+     }
+    },
+    "20": {
+     "cutoff_bits": 2.663865122,
+     "share_of_windows": 0.04859232541829476,
+     "share_of_digits": 0.2559,
+     "stack_2-30": {
+      "low_observed": 12.402110199296601,
+      "low_expected": 12.12761267545171,
+      "rest_observed": 12.001881467544685,
+      "rest_expected": 11.925110688637155
+     },
+     "stack_1-100": {
+      "low_observed": 40.417741305197346,
+      "low_expected": 41.07775922058305,
+      "rest_observed": 38.9579357613224,
+      "rest_expected": 40.304031529407894
+     },
+     "stack_101-1000": {
+      "low_observed": 344.39898397811646,
+      "low_expected": 346.0229976492768,
+      "rest_observed": 341.4436231689289,
+      "rest_expected": 341.2693177736614
+     },
+     "stack_1-1000": {
+      "low_observed": 384.8167252833138,
+      "low_expected": 387.10075686985755,
+      "rest_observed": 380.4015589302513,
+      "rest_expected": 381.57334930306683
+     },
+     "starts": {
+      "low_observed": 3.11957796014068,
+      "low_expected": 3.118822219106931,
+      "rest_observed": 2.9658648031178605,
+      "rest_expected": 3.0091238211345406
+     }
+    },
+    "30": {
+     "cutoff_bits": 2.896765178,
+     "share_of_windows": 0.04984454919265871,
+     "share_of_digits": 0.284,
+     "stack_2-30": {
+      "low_observed": 12.762323943661972,
+      "low_expected": 12.353219113185421,
+      "rest_observed": 11.843296089385476,
+      "rest_expected": 11.827676981729526
+     },
+     "stack_1-100": {
+      "low_observed": 40.165140845070425,
+      "low_expected": 41.22559126974845,
+      "rest_observed": 39.00083798882682,
+      "rest_expected": 40.21502866616069
+     },
+     "stack_101-1000": {
+      "low_observed": 347.1348591549296,
+      "low_expected": 348.7528213158735,
+      "rest_observed": 340.2424581005587,
+      "rest_expected": 339.99997653648506
+     },
+     "stack_1-1000": {
+      "low_observed": 387.3,
+      "low_expected": 389.9784125856196,
+      "rest_observed": 379.24329608938547,
+      "rest_expected": 380.21500520264334
+     },
+     "starts": {
+      "low_observed": 3.0711267605633803,
+      "low_expected": 3.108516630352288,
+      "rest_observed": 2.9790502793296088,
+      "rest_expected": 3.0089063102732196
+     }
+    },
+    "50": {
+     "cutoff_bits": 3.067160744,
+     "share_of_windows": 0.04994472917294744,
+     "share_of_digits": 0.3165,
+     "stack_2-30": {
+      "low_observed": 12.632859399684044,
+      "low_expected": 12.315878598140888,
+      "rest_observed": 11.859546452084857,
+      "rest_expected": 11.819978596563876
+     },
+     "stack_1-100": {
+      "low_observed": 40.8654028436019,
+      "low_expected": 41.762633808831204,
+      "rest_observed": 38.62121433796635,
+      "rest_expected": 39.91829531102347
+     },
+     "stack_101-1000": {
+      "low_observed": 342.7292259083728,
+      "low_expected": 342.8929238780591,
+      "rest_observed": 341.9547915142648,
+      "rest_expected": 342.29725537150796
+     },
+     "stack_1-1000": {
+      "low_observed": 383.5946287519747,
+      "low_expected": 384.6555576868881,
+      "rest_observed": 380.57600585223116,
+      "rest_expected": 382.215550682529
+     },
+     "starts": {
+      "low_observed": 3.10521327014218,
+      "low_expected": 3.1235570279381686,
+      "rest_observed": 2.9588880760790053,
+      "rest_expected": 2.9972053282125013
+     }
+    }
+   },
+   "known_cases": {
+    "G1700": {
+     "start": 493,
+     "end": 2193,
+     "length": 1700,
+     "prime": true,
+     "in_saved_primes": false,
+     "saved_primes_inside": 5171,
+     "longest_saved_prefix": 459,
+     "longest_saved_suffix": 24
+    },
+    "G1730": {
+     "start": 1465,
+     "end": 3195,
+     "length": 1730,
+     "prime": true,
+     "in_saved_primes": false,
+     "saved_primes_inside": 5151,
+     "longest_saved_prefix": 332,
+     "longest_saved_suffix": 770
+    },
+    "M2050": {
+     "start": 2676,
+     "end": 4726,
+     "length": 2050,
+     "prime": true,
+     "in_saved_primes": false,
+     "saved_primes_inside": 5672,
+     "longest_saved_prefix": 141,
+     "longest_saved_suffix": 891
+    },
+    "S1400": {
+     "start": 3326,
+     "end": 4726,
+     "length": 1400,
+     "prime": true,
+     "in_saved_primes": false,
+     "saved_primes_inside": 3594,
+     "longest_saved_prefix": 627,
+     "longest_saved_suffix": 891
+    },
+    "G1700 prefix": {
+     "start": 493,
+     "end": 952,
+     "length": 459,
+     "prime": true,
+     "in_saved_primes": true,
+     "saved_primes_inside": 1146,
+     "longest_saved_prefix": 0,
+     "longest_saved_suffix": 304
+    },
+    "G1700 suffix": {
+     "start": 639,
+     "end": 2193,
+     "length": 1554,
+     "prime": true,
+     "in_saved_primes": false,
+     "saved_primes_inside": 4670,
+     "longest_saved_prefix": 745,
+     "longest_saved_suffix": 24
+    },
+    "G1700 and G1730 overlap by 728": {
+     "computed": 728,
+     "matches": true
+    }
+   }
+  },
+  "parent_two": {
+   "primes": 29046,
+   "primes_by_band": {
+    "observed": {
+     "1-100": 20677.0,
+     "101-1000": 8369.0,
+     "1-1000": 29046.0
+    },
+    "expected": {
+     "1-100": 20583.18708833919,
+     "101-1000": 8455.881905339413,
+     "1-1000": 29039.068993678622
+    }
+   },
+   "towers": {
+    "observed": {
+     "prefix_pairs": 45658.0,
+     "with_prefix": 20382.0,
+     "suffix_pairs": 91602.0,
+     "with_suffix": 23112.0,
+     "nested_pairs": 7685087.0,
+     "with_nested": 21622.0,
+     "with_prefix_and_suffix": 19266.0
+    },
+    "expected": {
+     "prefix_pairs": 45620.196388666904,
+     "with_prefix": 20355.72053221436,
+     "suffix_pairs": 95740.0969553059,
+     "with_suffix": 23771.771258772173,
+     "nested_pairs": 7839497.576467765,
+     "with_nested": 21575.442724208133,
+     "with_prefix_and_suffix": 19647.252518596182
+    }
+   },
+   "towers_by_outer_band": {
+    "prefix": {
+     "observed": {
+      "1-100": 22520.0,
+      "101-1000": 23138.0
+     },
+     "expected": {
+      "1-100": 22123.671709220805,
+      "101-1000": 23496.524679446098
+     }
+    },
+    "suffix": {
+     "observed": {
+      "1-100": 42666.0,
+      "101-1000": 48936.0
+     },
+     "expected": {
+      "1-100": 44929.54692872098,
+      "101-1000": 50810.55002658493
+     }
+    },
+    "nested": {
+     "observed": {
+      "1-100": 489162.0,
+      "101-1000": 7195925.0
+     },
+     "expected": {
+      "1-100": 479692.9421026514,
+      "101-1000": 7359804.634365113
+     }
+    }
+   },
+   "depth": {
+    "deepest": 48,
+    "chain": [
+     [
+      4445,
+      998
+     ],
+     [
+      4485,
+      953
+     ],
+     [
+      4520,
+      915
+     ],
+     [
+      4558,
+      853
+     ],
+     [
+      4584,
+      805
+     ],
+     [
+      4598,
+      781
+     ],
+     [
+      4608,
+      759
+     ],
+     [
+      4615,
+      707
+     ],
+     [
+      4651,
+      668
+     ],
+     [
+      4685,
+      625
+     ],
+     [
+      4691,
+      618
+     ],
+     [
+      4720,
+      572
+     ],
+     [
+      4725,
+      543
+     ],
+     [
+      4759,
+      483
+     ],
+     [
+      4784,
+      452
+     ],
+     [
+      4805,
+      425
+     ],
+     [
+      4806,
+      401
+     ],
+     [
+      4813,
+      379
+     ],
+     [
+      4835,
+      334
+     ],
+     [
+      4847,
+      307
+     ],
+     [
+      4858,
+      282
+     ],
+     [
+      4871,
+      246
+     ],
+     [
+      4891,
+      205
+     ],
+     [
+      4893,
+      195
+     ],
+     [
+      4917,
+      164
+     ],
+     [
+      4925,
+      150
+     ],
+     [
+      4933,
+      136
+     ],
+     [
+      4934,
+      133
+     ],
+     [
+      4934,
+      128
+     ],
+     [
+      4939,
+      108
+     ],
+     [
+      4944,
+      99
+     ],
+     [
+      4947,
+      93
+     ],
+     [
+      4962,
+      78
+     ],
+     [
+      4965,
+      68
+     ],
+     [
+      4983,
+      42
+     ],
+     [
+      4984,
+      41
+     ],
+     [
+      4992,
+      31
+     ],
+     [
+      4992,
+      28
+     ],
+     [
+      4993,
+      21
+     ],
+     [
+      4993,
+      20
+     ],
+     [
+      4993,
+      17
+     ],
+     [
+      4997,
+      13
+     ],
+     [
+      4999,
+      9
+     ],
+     [
+      5002,
+      6
+     ],
+     [
+      5002,
+      4
+     ],
+     [
+      5002,
+      3
+     ],
+     [
+      5002,
+      2
+     ],
+     [
+      5002,
+      1
+     ]
+    ],
+    "primes_by_depth": {
+     "1": 4665,
+     "2": 2676,
+     "3": 2222,
+     "4": 1762,
+     "5": 1490,
+     "6": 1245,
+     "7": 1104,
+     "8": 977,
+     "9": 888,
+     "10": 784,
+     "11": 693,
+     "12": 650,
+     "13": 623,
+     "14": 579,
+     "15": 542,
+     "16": 516,
+     "17": 494,
+     "18": 471,
+     "19": 441,
+     "20": 421,
+     "21": 402,
+     "22": 355,
+     "23": 342,
+     "24": 318,
+     "25": 321,
+     "26": 300,
+     "27": 301,
+     "28": 290,
+     "29": 270,
+     "30": 258,
+     "31": 254,
+     "32": 232,
+     "33": 233,
+     "34": 231,
+     "35": 224,
+     "36": 197,
+     "37": 203,
+     "38": 194,
+     "39": 195,
+     "40": 176,
+     "41": 165,
+     "42": 129,
+     "43": 99,
+     "44": 66,
+     "45": 29,
+     "46": 11,
+     "47": 6,
+     "48": 2
+    }
+   },
+   "overlaps": {
+    "observed": {
+     "pairs": 2625070.0,
+     "mean_shared": 122.24880746037249,
+     "shared_1_10": 410911.0,
+     "shared_11_100": 1175217.0,
+     "shared_101_999": 1038942.0
+    },
+    "expected": {
+     "pairs": 2682165.2674051854,
+     "mean_shared": 125.48150923663657,
+     "shared_1_10": 413980.2813905022,
+     "shared_11_100": 1182600.788357655,
+     "shared_101_999": 1085584.1976570282
+    }
+   },
+   "stack": {
+    "2-30": {
+     "observed_mean": 11.2955,
+     "expected_mean": 11.42399066325578,
+     "observed_max": 35.0,
+     "max_at_place": 2267
+    },
+    "1-100": {
+     "observed_mean": 39.1612,
+     "expected_mean": 38.60629863720236,
+     "observed_max": 71.0,
+     "max_at_place": 1181
+    },
+    "101-1000": {
+     "observed_mean": 318.2734,
+     "expected_mean": 325.8696135663415,
+     "observed_max": 402.0,
+     "max_at_place": 4964
+    },
+    "1-1000": {
+     "observed_mean": 357.4346,
+     "expected_mean": 364.4759122035424,
+     "observed_max": 453.0,
+     "max_at_place": 5003
+    }
+   },
+   "bridges": {
+    "giants": 8369,
+    "no_prefix": 449,
+    "no_suffix": 12,
+    "meet": 2479,
+    "gap": 5431,
+    "bridged": 4479,
+    "bridges": 87743,
+    "examples": [
+     {
+      "giant": [
+       2,
+       235
+      ],
+      "prefix": 8,
+      "suffix": 8,
+      "gap": [
+       10,
+       229
+      ],
+      "bridge": [
+       3,
+       233
+      ]
+     },
+     {
+      "giant": [
+       3,
+       233
+      ],
+      "prefix": 10,
+      "suffix": 85,
+      "gap": [
+       13,
+       151
+      ],
+      "bridge": [
+       13,
+       220
+      ]
+     },
+     {
+      "giant": [
+       4,
+       265
+      ],
+      "prefix": 48,
+      "suffix": 8,
+      "gap": [
+       52,
+       261
+      ],
+      "bridge": [
+       39,
+       227
+      ]
+     },
+     {
+      "giant": [
+       4,
+       718
+      ],
+      "prefix": 265,
+      "suffix": 130,
+      "gap": [
+       269,
+       592
+      ],
+      "bridge": [
+       26,
+       600
+      ]
+     },
+     {
+      "giant": [
+       6,
+       201
+      ],
+      "prefix": 4,
+      "suffix": 183,
+      "gap": [
+       10,
+       24
+      ],
+      "bridge": [
+       8,
+       159
+      ]
+     }
+    ]
+   },
+   "covers": {
+    "giants": 8369,
+    "overlapping_pairs": 1742962,
+    "pairs_with_cover": 1212024,
+    "cover_primes": 7108
+   },
+   "low_entropy": {
+    "3": {
+     "cutoff_bits": 0.0,
+     "share_of_windows": 0.010602120424084817,
+     "share_of_digits": 0.0296,
+     "stack_2-30": {
+      "low_observed": 11.280405405405405,
+      "low_expected": 11.743137031951262,
+      "rest_observed": 11.2959604286892,
+      "rest_expected": 11.414255778143058
+     },
+     "stack_1-100": {
+      "low_observed": 40.19932432432432,
+      "low_expected": 39.56898421990955,
+      "rest_observed": 39.129534212695795,
+      "rest_expected": 38.576933949189026
+     },
+     "stack_101-1000": {
+      "low_observed": 311.9932432432432,
+      "low_expected": 322.23851171100154,
+      "rest_observed": 318.4649629018961,
+      "rest_expected": 325.98037265014
+     },
+     "stack_1-1000": {
+      "low_observed": 352.19256756756755,
+      "low_expected": 361.8074959309093,
+      "rest_observed": 357.59449711459195,
+      "rest_expected": 364.5573065993276
+     },
+     "starts": {
+      "low_observed": 2.581081081081081,
+      "low_expected": 2.8388116851885767,
+      "rest_observed": 2.9144682605111294,
+      "rest_expected": 2.9058924912265875
+     }
+    },
+    "4": {
+     "cutoff_bits": 0.811278124,
+     "share_of_windows": 0.04031209362808843,
+     "share_of_digits": 0.119,
+     "stack_2-30": {
+      "low_observed": 11.381512605042017,
+      "low_expected": 11.534785342178061,
+      "rest_observed": 11.283881952326901,
+      "rest_expected": 11.409025207192501
+     },
+     "stack_1-100": {
+      "low_observed": 39.79831932773109,
+      "low_expected": 39.053104646676616,
+      "rest_observed": 39.075141884222475,
+      "rest_expected": 38.54594686066724
+     },
+     "stack_101-1000": {
+      "low_observed": 313.18403361344537,
+      "low_expected": 321.6466054354649,
+      "rest_observed": 318.9608399545971,
+      "rest_expected": 326.4400312366869
+     },
+     "stack_1-1000": {
+      "low_observed": 352.9823529411765,
+      "low_expected": 360.6997100821399,
+      "rest_observed": 358.0359818388195,
+      "rest_expected": 364.98597809735276
+     },
+     "starts": {
+      "low_observed": 2.772268907563025,
+      "low_expected": 2.8608215625179017,
+      "rest_observed": 2.9224744608399544,
+      "rest_expected": 2.9097265986699568
+     }
+    },
+    "5": {
+     "cutoff_bits": 0.970950594,
+     "share_of_windows": 0.014205682272909163,
+     "share_of_digits": 0.0532,
+     "stack_2-30": {
+      "low_observed": 10.926691729323307,
+      "low_expected": 11.366963053663758,
+      "rest_observed": 11.316223067173638,
+      "rest_expected": 11.427195002958246
+     },
+     "stack_1-100": {
+      "low_observed": 39.12593984962406,
+      "low_expected": 38.5783812103817,
+      "rest_observed": 39.16318124207858,
+      "rest_expected": 38.60786729701103
+     },
+     "stack_101-1000": {
+      "low_observed": 304.0827067669173,
+      "low_expected": 312.45605257913473,
+      "rest_observed": 319.0707646810308,
+      "rest_expected": 326.6233117544693
+     },
+     "stack_1-1000": {
+      "low_observed": 343.20864661654133,
+      "low_expected": 351.03443378951465,
+      "rest_observed": 358.23394592310945,
+      "rest_expected": 365.23117905147893
+     },
+     "starts": {
+      "low_observed": 2.674812030075188,
+      "low_expected": 2.7620125849949084,
+      "rest_observed": 2.9175116180819605,
+      "rest_expected": 2.91187983718434
+     }
+    },
+    "6": {
+     "cutoff_bits": 1.251629167,
+     "share_of_windows": 0.014907453726863432,
+     "share_of_digits": 0.0581,
+     "stack_2-30": {
+      "low_observed": 10.939759036144578,
+      "low_expected": 11.560833437502042,
+      "rest_observed": 11.317443465336023,
+      "rest_expected": 11.415549676756463
+     },
+     "stack_1-100": {
+      "low_observed": 38.42340791738382,
+      "low_expected": 38.40917351267458,
+      "rest_observed": 39.20670984180911,
+      "rest_expected": 38.61845806998191
+     },
+     "stack_101-1000": {
+      "low_observed": 309.29432013769366,
+      "low_expected": 320.8734929063067,
+      "rest_observed": 318.8272640407687,
+      "rest_expected": 326.1777934265687
+     },
+     "stack_1-1000": {
+      "low_observed": 347.71772805507743,
+      "low_expected": 359.2826664189795,
+      "rest_observed": 358.03397388257775,
+      "rest_expected": 364.79625149654925
+     },
+     "starts": {
+      "low_observed": 2.7263339070567985,
+      "low_expected": 2.8480637986045605,
+      "rest_observed": 2.9155961354708566,
+      "rest_expected": 2.9073515157330263
+     }
+    },
+    "7": {
+     "cutoff_bits": 1.664497779,
+     "share_of_windows": 0.044826896137682606,
+     "share_of_digits": 0.1698,
+     "stack_2-30": {
+      "low_observed": 11.114252061248528,
+      "low_expected": 11.526149595191251,
+      "rest_observed": 11.332570464948205,
+      "rest_expected": 11.40309619608806
+     },
+     "stack_1-100": {
+      "low_observed": 39.350412249705535,
+      "low_expected": 38.971490633526905,
+      "rest_observed": 39.122500602264516,
+      "rest_expected": 38.53160627274089
+     },
+     "stack_101-1000": {
+      "low_observed": 317.25971731448766,
+      "low_expected": 325.3810661733207,
+      "rest_observed": 318.4807275355336,
+      "rest_expected": 325.96953569032956
+     },
+     "stack_1-1000": {
+      "low_observed": 356.6101295641932,
+      "low_expected": 364.3525568068461,
+      "rest_observed": 357.6032281377981,
+      "rest_expected": 364.5011419630691
+     },
+     "starts": {
+      "low_observed": 2.838633686690224,
+      "low_expected": 2.871117602068804,
+      "rest_observed": 2.918092026017827,
+      "rest_expected": 2.910613262510936
+     }
+    },
+    "8": {
+     "cutoff_bits": 1.75,
+     "share_of_windows": 0.03452416691684179,
+     "share_of_digits": 0.1491,
+     "stack_2-30": {
+      "low_observed": 11.30784708249497,
+      "low_expected": 11.84306857496763,
+      "rest_observed": 11.293336467269949,
+      "rest_expected": 11.350557220270428
+     },
+     "stack_1-100": {
+      "low_observed": 39.537894030851774,
+      "low_expected": 39.31549683811109,
+      "rest_observed": 39.095193324715005,
+      "rest_expected": 38.48202850939005
+     },
+     "stack_101-1000": {
+      "low_observed": 317.4802146210597,
+      "low_expected": 325.96945533676643,
+      "rest_observed": 318.41238688447527,
+      "rest_expected": 325.85211866920866
+     },
+     "stack_1-1000": {
+      "low_observed": 357.01810865191146,
+      "low_expected": 365.2849521748759,
+      "rest_observed": 357.5075802091903,
+      "rest_expected": 364.3341471785973
+     },
+     "starts": {
+      "low_observed": 2.841046277665996,
+      "low_expected": 2.908088166829166,
+      "rest_observed": 2.9157362792337524,
+      "rest_expected": 2.9031742316296083
+     }
+    },
+    "9": {
+     "cutoff_bits": 1.891061112,
+     "share_of_windows": 0.04523618895116093,
+     "share_of_digits": 0.1862,
+     "stack_2-30": {
+      "low_observed": 11.481203007518797,
+      "low_expected": 11.81199212519634,
+      "rest_observed": 11.253010567707053,
+      "rest_expected": 11.335214708213593
+     },
+     "stack_1-100": {
+      "low_observed": 40.33029001074114,
+      "low_expected": 39.677338902413396,
+      "rest_observed": 38.89370852789383,
+      "rest_expected": 38.3612412553121
+     },
+     "stack_101-1000": {
+      "low_observed": 320.765843179377,
+      "low_expected": 329.8325255655948,
+      "rest_observed": 317.7031211599902,
+      "rest_expected": 324.9628868346372
+     },
+     "stack_1-1000": {
+      "low_observed": 361.09613319011817,
+      "low_expected": 369.50986446800687,
+      "rest_observed": 356.596829687884,
+      "rest_expected": 363.3241280899478
+     },
+     "starts": {
+      "low_observed": 2.9720730397422126,
+      "low_expected": 2.9685694150054394,
+      "rest_observed": 2.889161956254608,
+      "rest_expected": 2.8891119123787776
+     }
+    },
+    "10": {
+     "cutoff_bits": 2.046439345,
+     "share_of_windows": 0.04784305875287759,
+     "share_of_digits": 0.2155,
+     "stack_2-30": {
+      "low_observed": 11.2830626450116,
+      "low_expected": 11.538706124120582,
+      "rest_observed": 11.298916507329508,
+      "rest_expected": 11.39247864054531
+     },
+     "stack_1-100": {
+      "low_observed": 39.80046403712297,
+      "low_expected": 39.03346374397865,
+      "rest_observed": 38.98559592096877,
+      "rest_expected": 38.48895755305922
+     },
+     "stack_101-1000": {
+      "low_observed": 320.8825986078886,
+      "low_expected": 329.8762893880474,
+      "rest_observed": 317.55666029318036,
+      "rest_expected": 324.76899069881114
+     },
+     "stack_1-1000": {
+      "low_observed": 360.6830626450116,
+      "low_expected": 368.9097531320245,
+      "rest_observed": 356.5422562141491,
+      "rest_expected": 363.25794825186887
+     },
+     "starts": {
+      "low_observed": 2.871461716937355,
+      "low_expected": 2.8805506526066185,
+      "rest_observed": 2.9137029955385594,
+      "rest_expected": 2.9103227963430665
+     }
+    },
+    "12": {
+     "cutoff_bits": 2.221251836,
+     "share_of_windows": 0.046851536690359394,
+     "share_of_digits": 0.2081,
+     "stack_2-30": {
+      "low_observed": 11.03988467083133,
+      "low_expected": 11.70578577137801,
+      "rest_observed": 11.362672054552343,
+      "rest_expected": 11.349938937027424
+     },
+     "stack_1-100": {
+      "low_observed": 39.455550216242194,
+      "low_expected": 39.39335027195907,
+      "rest_observed": 39.08384897082965,
+      "rest_expected": 38.399472718282205
+     },
+     "stack_101-1000": {
+      "low_observed": 319.41230177799133,
+      "low_expected": 327.88304609190067,
+      "rest_observed": 317.97411289304205,
+      "rest_expected": 325.3405122801073
+     },
+     "stack_1-1000": {
+      "low_observed": 358.86785199423355,
+      "low_expected": 367.2763963638582,
+      "rest_observed": 357.0579618638717,
+      "rest_expected": 363.7399849983881
+     },
+     "starts": {
+      "low_observed": 2.9221528111484862,
+      "low_expected": 2.9215265497244776,
+      "rest_observed": 2.8999873721429474,
+      "rest_expected": 2.8992767071223615
+     }
+    },
+    "15": {
+     "cutoff_bits": 2.415922064,
+     "share_of_windows": 0.04596435009012618,
+     "share_of_digits": 0.2195,
+     "stack_2-30": {
+      "low_observed": 11.320728929384966,
+      "low_expected": 11.755793023954489,
+      "rest_observed": 11.288404868673927,
+      "rest_expected": 11.33067789173321
+     },
+     "stack_1-100": {
+      "low_observed": 40.369020501138955,
+      "low_expected": 39.706502498590595,
+      "rest_observed": 38.82152466367713,
+      "rest_expected": 38.29688832640836
+     },
+     "stack_101-1000": {
+      "low_observed": 319.4984054669704,
+      "low_expected": 328.3110507068809,
+      "rest_observed": 317.92889173606665,
+      "rest_expected": 325.18300824622827
+     },
+     "stack_1-1000": {
+      "low_observed": 359.86742596810933,
+      "low_expected": 368.01755320547005,
+      "rest_observed": 356.75041639974376,
+      "rest_expected": 363.4798965726352
+     },
+     "starts": {
+      "low_observed": 2.9129840546697037,
+      "low_expected": 2.9218485353551693,
+      "rest_observed": 2.9022421524663677,
+      "rest_expected": 2.8988611734239624
+     }
+    },
+    "20": {
+     "cutoff_bits": 2.633206219,
+     "share_of_windows": 0.04959422903516682,
+     "share_of_digits": 0.2425,
+     "stack_2-30": {
+      "low_observed": 11.329896907216495,
+      "low_expected": 11.59436602116334,
+      "rest_observed": 11.284488448844884,
+      "rest_expected": 11.369448056928936
+     },
+     "stack_1-100": {
+      "low_observed": 39.94103092783505,
+      "low_expected": 39.211307606349244,
+      "rest_observed": 38.91155115511551,
+      "rest_expected": 38.41261589790451
+     },
+     "stack_101-1000": {
+      "low_observed": 323.30474226804125,
+      "low_expected": 333.4627119731028,
+      "rest_observed": 316.66270627062704,
+      "rest_expected": 323.4388196869493
+     },
+     "stack_1-1000": {
+      "low_observed": 363.24577319587627,
+      "low_expected": 372.6740195794506,
+      "rest_observed": 355.5742574257426,
+      "rest_expected": 361.8514355848523
+     },
+     "starts": {
+      "low_observed": 2.939381443298969,
+      "low_expected": 2.934027559886622,
+      "rest_observed": 2.8934653465346534,
+      "rest_expected": 2.894264311677038
+     }
+    },
+    "30": {
+     "cutoff_bits": 2.855261428,
+     "share_of_windows": 0.04783873232373884,
+     "share_of_digits": 0.2538,
+     "stack_2-30": {
+      "low_observed": 10.78014184397163,
+      "low_expected": 10.92411030200765,
+      "rest_observed": 11.470785312248728,
+      "rest_expected": 11.594011617001122
+     },
+     "stack_1-100": {
+      "low_observed": 38.885342789598106,
+      "low_expected": 37.81117905714397,
+      "rest_observed": 39.25502546234254,
+      "rest_expected": 38.876737325782926
+     },
+     "stack_101-1000": {
+      "low_observed": 320.92671394799055,
+      "low_expected": 330.7655012006948,
+      "rest_observed": 317.3709461270437,
+      "rest_expected": 324.20440815010073
+     },
+     "stack_1-1000": {
+      "low_observed": 359.81205673758865,
+      "low_expected": 368.57668025783744,
+      "rest_observed": 356.6259715893862,
+      "rest_expected": 363.0811454758821
+     },
+     "starts": {
+      "low_observed": 2.8045705279747835,
+      "low_expected": 2.8004331258459607,
+      "rest_observed": 2.9386223532564997,
+      "rest_expected": 2.939100739785791
+     }
+    },
+    "50": {
+     "cutoff_bits": 3.051343132,
+     "share_of_windows": 0.04984423676012461,
+     "share_of_digits": 0.2835,
+     "stack_2-30": {
+      "low_observed": 10.804585537918872,
+      "low_expected": 10.96639306311353,
+      "rest_observed": 11.489741800418702,
+      "rest_expected": 11.60504986721995
+     },
+     "stack_1-100": {
+      "low_observed": 37.883597883597886,
+      "low_expected": 37.33655151935684,
+      "rest_observed": 39.66671318911375,
+      "rest_expected": 39.10870381223265
+     },
+     "stack_101-1000": {
+      "low_observed": 320.5622574955908,
+      "low_expected": 330.04420179154187,
+      "rest_observed": 317.3677599441731,
+      "rest_expected": 324.21783999782184
+     },
+     "stack_1-1000": {
+      "low_observed": 358.4458553791887,
+      "low_expected": 367.38075331089715,
+      "rest_observed": 357.03447313328684,
+      "rest_expected": 363.3265438100531
+     },
+     "starts": {
+      "low_observed": 2.8084656084656086,
+      "low_expected": 2.7937155259158652,
+      "rest_observed": 2.9426378227494765,
+      "rest_expected": 2.947506696121025
+     }
+    }
+   }
+  },
+  "pi": {
+   "primes": 29431,
+   "primes_by_band": {
+    "observed": {
+     "1-100": 20884.0,
+     "101-1000": 8547.0,
+     "1-1000": 29431.0
+    },
+    "expected": {
+     "1-100": 20968.051473242896,
+     "101-1000": 8655.265118311509,
+     "1-1000": 29623.316591554416
+    }
+   },
+   "towers": {
+    "observed": {
+     "prefix_pairs": 46883.0,
+     "with_prefix": 20712.0,
+     "suffix_pairs": 92371.0,
+     "with_suffix": 23382.0,
+     "nested_pairs": 8058506.0,
+     "with_nested": 22052.0,
+     "with_prefix_and_suffix": 19501.0
+    },
+    "expected": {
+     "prefix_pairs": 47487.15815067402,
+     "with_prefix": 20882.726760546084,
+     "suffix_pairs": 98182.14954720158,
+     "with_suffix": 24263.388320000948,
+     "nested_pairs": 8216804.597710388,
+     "with_nested": 22088.856100433622,
+     "with_prefix_and_suffix": 20148.789391885082
+    }
+   },
+   "towers_by_outer_band": {
+    "prefix": {
+     "observed": {
+      "1-100": 22885.0,
+      "101-1000": 23998.0
+     },
+     "expected": {
+      "1-100": 23022.47092852566,
+      "101-1000": 24464.687222148357
+     }
+    },
+    "suffix": {
+     "observed": {
+      "1-100": 42590.0,
+      "101-1000": 49781.0
+     },
+     "expected": {
+      "1-100": 45932.12755319178,
+      "101-1000": 52250.02199400979
+     }
+    },
+    "nested": {
+     "observed": {
+      "1-100": 490809.0,
+      "101-1000": 7567697.0
+     },
+     "expected": {
+      "1-100": 501344.46015986695,
+      "101-1000": 7715460.13755052
+     }
+    }
+   },
+   "depth": {
+    "deepest": 52,
+    "chain": [
+     [
+      2823,
+      972
+     ],
+     [
+      2856,
+      934
+     ],
+     [
+      2860,
+      915
+     ],
+     [
+      2897,
+      827
+     ],
+     [
+      2902,
+      819
+     ],
+     [
+      2903,
+      808
+     ],
+     [
+      2935,
+      773
+     ],
+     [
+      2936,
+      760
+     ],
+     [
+      2951,
+      728
+     ],
+     [
+      2976,
+      697
+     ],
+     [
+      2998,
+      675
+     ],
+     [
+      3027,
+      631
+     ],
+     [
+      3031,
+      587
+     ],
+     [
+      3056,
+      532
+     ],
+     [
+      3068,
+      504
+     ],
+     [
+      3076,
+      476
+     ],
+     [
+      3094,
+      456
+     ],
+     [
+      3108,
+      440
+     ],
+     [
+      3130,
+      411
+     ],
+     [
+      3136,
+      400
+     ],
+     [
+      3140,
+      379
+     ],
+     [
+      3142,
+      365
+     ],
+     [
+      3146,
+      354
+     ],
+     [
+      3146,
+      339
+     ],
+     [
+      3158,
+      310
+     ],
+     [
+      3167,
+      238
+     ],
+     [
+      3167,
+      228
+     ],
+     [
+      3175,
+      220
+     ],
+     [
+      3176,
+      211
+     ],
+     [
+      3178,
+      197
+     ],
+     [
+      3182,
+      176
+     ],
+     [
+      3183,
+      172
+     ],
+     [
+      3186,
+      167
+     ],
+     [
+      3205,
+      118
+     ],
+     [
+      3210,
+      109
+     ],
+     [
+      3212,
+      104
+     ],
+     [
+      3214,
+      100
+     ],
+     [
+      3217,
+      91
+     ],
+     [
+      3229,
+      72
+     ],
+     [
+      3229,
+      67
+     ],
+     [
+      3238,
+      58
+     ],
+     [
+      3244,
+      47
+     ],
+     [
+      3253,
+      38
+     ],
+     [
+      3254,
+      37
+     ],
+     [
+      3261,
+      23
+     ],
+     [
+      3261,
+      20
+     ],
+     [
+      3271,
+      10
+     ],
+     [
+      3273,
+      8
+     ],
+     [
+      3274,
+      6
+     ],
+     [
+      3275,
+      4
+     ],
+     [
+      3277,
+      2
+     ],
+     [
+      3278,
+      1
+     ]
+    ],
+    "primes_by_depth": {
+     "1": 4688,
+     "2": 2666,
+     "3": 2180,
+     "4": 1810,
+     "5": 1537,
+     "6": 1283,
+     "7": 1107,
+     "8": 1003,
+     "9": 885,
+     "10": 814,
+     "11": 742,
+     "12": 662,
+     "13": 631,
+     "14": 579,
+     "15": 559,
+     "16": 528,
+     "17": 506,
+     "18": 451,
+     "19": 421,
+     "20": 382,
+     "21": 371,
+     "22": 344,
+     "23": 322,
+     "24": 340,
+     "25": 324,
+     "26": 294,
+     "27": 280,
+     "28": 254,
+     "29": 273,
+     "30": 274,
+     "31": 249,
+     "32": 236,
+     "33": 244,
+     "34": 227,
+     "35": 211,
+     "36": 221,
+     "37": 207,
+     "38": 189,
+     "39": 202,
+     "40": 165,
+     "41": 174,
+     "42": 146,
+     "43": 124,
+     "44": 96,
+     "45": 78,
+     "46": 50,
+     "47": 38,
+     "48": 28,
+     "49": 21,
+     "50": 9,
+     "51": 4,
+     "52": 2
+    }
+   },
+   "overlaps": {
+    "observed": {
+     "pairs": 2741462.0,
+     "mean_shared": 124.77592248223758,
+     "shared_1_10": 430995.0,
+     "shared_11_100": 1207903.0,
+     "shared_101_999": 1102564.0
+    },
+    "expected": {
+     "pairs": 2813273.3611366116,
+     "mean_shared": 125.0491718700228,
+     "shared_1_10": 434754.73673762416,
+     "shared_11_100": 1242210.583113709,
+     "shared_101_999": 1136308.0412852783
+    }
+   },
+   "stack": {
+    "2-30": {
+     "observed_mean": 11.7916,
+     "expected_mean": 11.659105168759476,
+     "observed_max": 32.0,
+     "max_at_place": 38
+    },
+    "1-100": {
+     "observed_mean": 38.8906,
+     "expected_mean": 39.36629379381968,
+     "observed_max": 77.0,
+     "max_at_place": 4441
+    },
+    "101-1000": {
+     "observed_mean": 328.2098,
+     "expected_mean": 332.97824625940825,
+     "observed_max": 439.0,
+     "max_at_place": 2727
+    },
+    "1-1000": {
+     "observed_mean": 367.1004,
+     "expected_mean": 372.34454005322635,
+     "observed_max": 494.0,
+     "max_at_place": 2731
+    }
+   },
+   "bridges": {
+    "giants": 8547,
+    "no_prefix": 456,
+    "no_suffix": 19,
+    "meet": 2535,
+    "gap": 5537,
+    "bridged": 4579,
+    "bridges": 89966,
+    "examples": [
+     {
+      "giant": [
+       0,
+       281
+      ],
+      "prefix": 12,
+      "suffix": 63,
+      "gap": [
+       12,
+       218
+      ],
+      "bridge": [
+       9,
+       226
+      ]
+     },
+     {
+      "giant": [
+       0,
+       547
+      ],
+      "prefix": 281,
+      "suffix": 171,
+      "gap": [
+       281,
+       376
+      ],
+      "bridge": [
+       32,
+       509
+      ]
+     },
+     {
+      "giant": [
+       3,
+       892
+      ],
+      "prefix": 10,
+      "suffix": 741,
+      "gap": [
+       13,
+       154
+      ],
+      "bridge": [
+       10,
+       840
+      ]
+     },
+     {
+      "giant": [
+       6,
+       160
+      ],
+      "prefix": 7,
+      "suffix": 78,
+      "gap": [
+       13,
+       88
+      ],
+      "bridge": [
+       12,
+       141
+      ]
+     },
+     {
+      "giant": [
+       7,
+       402
+      ],
+      "prefix": 35,
+      "suffix": 341,
+      "gap": [
+       42,
+       68
+      ],
+      "bridge": [
+       9,
+       275
+      ]
+     }
+    ]
+   },
+   "covers": {
+    "giants": 8547,
+    "overlapping_pairs": 1838929,
+    "pairs_with_cover": 1258503,
+    "cover_primes": 7249
+   },
+   "low_entropy": {
+    "3": {
+     "cutoff_bits": 0.0,
+     "share_of_windows": 0.008901780356071214,
+     "share_of_digits": 0.0247,
+     "stack_2-30": {
+      "low_observed": 11.364372469635628,
+      "low_expected": 11.435515401331923,
+      "rest_observed": 11.802419768276428,
+      "rest_expected": 11.66476770055017
+     },
+     "stack_1-100": {
+      "low_observed": 38.21457489878542,
+      "low_expected": 38.68260083598256,
+      "rest_observed": 38.90772070132267,
+      "rest_expected": 39.38360868775854
+     },
+     "stack_101-1000": {
+      "low_observed": 332.21457489878543,
+      "low_expected": 339.80306906072326,
+      "rest_observed": 328.10837690966883,
+      "rest_expected": 332.80540393069657
+     },
+     "stack_1-1000": {
+      "low_observed": 370.42914979757086,
+      "low_expected": 378.48566989670434,
+      "rest_observed": 367.0160976109915,
+      "rest_expected": 372.18901261845355
+     },
+     "starts": {
+      "low_observed": 2.8299595141700404,
+      "low_expected": 2.9843724944415078,
+      "rest_observed": 2.945965343996719,
+      "rest_expected": 2.961773463080833
+     }
+    },
+    "4": {
+     "cutoff_bits": 0.811278124,
+     "share_of_windows": 0.03471041312393718,
+     "share_of_digits": 0.1035,
+     "stack_2-30": {
+      "low_observed": 11.919806763285024,
+      "low_expected": 11.679526434023769,
+      "rest_observed": 11.776798661461239,
+      "rest_expected": 11.656747554755178
+     },
+     "stack_1-100": {
+      "low_observed": 38.4743961352657,
+      "low_expected": 39.05068959920436,
+      "rest_observed": 38.938650306748464,
+      "rest_expected": 39.402729972450665
+     },
+     "stack_101-1000": {
+      "low_observed": 328.51787439613526,
+      "low_expected": 333.5038717381193,
+      "rest_observed": 328.1742331288344,
+      "rest_expected": 332.91756334022637
+     },
+     "stack_1-1000": {
+      "low_observed": 366.99227053140095,
+      "low_expected": 372.55456133732196,
+      "rest_observed": 367.11288343558283,
+      "rest_expected": 372.32029331267535
+     },
+     "starts": {
+      "low_observed": 2.8830917874396134,
+      "low_expected": 2.9680659984044286,
+      "rest_observed": 2.950027886224205,
+      "rest_expected": 2.961669635605782
+     }
+    },
+    "5": {
+     "cutoff_bits": 0.970950594,
+     "share_of_windows": 0.014005602240896359,
+     "share_of_digits": 0.055,
+     "stack_2-30": {
+      "low_observed": 12.101818181818182,
+      "low_expected": 11.938045712841463,
+      "rest_observed": 11.773544973544974,
+      "rest_expected": 11.642870533918726
+     },
+     "stack_1-100": {
+      "low_observed": 38.658181818181816,
+      "low_expected": 39.514121003488185,
+      "rest_observed": 38.90412698412698,
+      "rest_expected": 39.357690093786054
+     },
+     "stack_101-1000": {
+      "low_observed": 331.5490909090909,
+      "low_expected": 337.70118893520134,
+      "rest_observed": 328.01544973544975,
+      "rest_expected": 332.7033659978541
+     },
+     "stack_1-1000": {
+      "low_observed": 370.2072727272727,
+      "low_expected": 377.21530993868794,
+      "rest_observed": 366.9195767195767,
+      "rest_expected": 372.0610560916386
+     },
+     "starts": {
+      "low_observed": 2.78,
+      "low_expected": 2.9068467174796195,
+      "rest_observed": 2.9525925925925924,
+      "rest_expected": 2.9655609414751987
+     }
+    },
+    "6": {
+     "cutoff_bits": 1.251629167,
+     "share_of_windows": 0.012406203101550776,
+     "share_of_digits": 0.0492,
+     "stack_2-30": {
+      "low_observed": 11.34959349593496,
+      "low_expected": 11.39044878418672,
+      "rest_observed": 11.814472023559109,
+      "rest_expected": 11.673007034683941
+     },
+     "stack_1-100": {
+      "low_observed": 38.01829268292683,
+      "low_expected": 38.55527178824052,
+      "rest_observed": 38.93573832562053,
+      "rest_expected": 39.40826085595103
+     },
+     "stack_101-1000": {
+      "low_observed": 332.9065040650407,
+      "low_expected": 339.1952426277291,
+      "rest_observed": 327.96676482961715,
+      "rest_expected": 332.65654219827934
+     },
+     "stack_1-1000": {
+      "low_observed": 370.9247967479675,
+      "low_expected": 377.75051441596815,
+      "rest_observed": 366.9025031552377,
+      "rest_expected": 372.0648030542287
+     },
+     "starts": {
+      "low_observed": 2.8272357723577235,
+      "low_expected": 2.837484400909663,
+      "rest_observed": 2.949095498527556,
+      "rest_expected": 2.968791992670053
+     }
+    },
+    "7": {
+     "cutoff_bits": 1.664497779,
+     "share_of_windows": 0.038322993796277766,
+     "share_of_digits": 0.1479,
+     "stack_2-30": {
+      "low_observed": 11.77079107505071,
+      "low_expected": 11.817632524638341,
+      "rest_observed": 11.795211829597465,
+      "rest_expected": 11.631589388998318
+     },
+     "stack_1-100": {
+      "low_observed": 38.60919540229885,
+      "low_expected": 39.500587912372005,
+      "rest_observed": 38.93944372726206,
+      "rest_expected": 39.34298420558603
+     },
+     "stack_101-1000": {
+      "low_observed": 333.4983096686951,
+      "low_expected": 339.160375666512,
+      "rest_observed": 327.29186715174274,
+      "rest_expected": 331.90520678128286
+     },
+     "stack_1-1000": {
+      "low_observed": 372.1075050709939,
+      "low_expected": 378.66096357888233,
+      "rest_observed": 366.2313108790048,
+      "rest_expected": 371.24819098686726
+     },
+     "starts": {
+      "low_observed": 2.951994590939824,
+      "low_expected": 2.968543197760505,
+      "rest_observed": 2.941556155380824,
+      "rest_expected": 2.9612535150882087
+     }
+    },
+    "8": {
+     "cutoff_bits": 1.811278124,
+     "share_of_windows": 0.04783348343840688,
+     "share_of_digits": 0.191,
+     "stack_2-30": {
+      "low_observed": 11.4282722513089,
+      "low_expected": 11.54065532212611,
+      "rest_observed": 11.877379480840544,
+      "rest_expected": 11.68707046011544
+     },
+     "stack_1-100": {
+      "low_observed": 38.20523560209424,
+      "low_expected": 38.79883060544794,
+      "rest_observed": 39.05241038318912,
+      "rest_expected": 39.50026841554897
+     },
+     "stack_101-1000": {
+      "low_observed": 328.29319371727746,
+      "low_expected": 334.034707286028,
+      "rest_observed": 328.19011124845485,
+      "rest_expected": 332.7288222098602
+     },
+     "stack_1-1000": {
+      "low_observed": 366.4984293193717,
+      "low_expected": 372.83353789147435,
+      "rest_observed": 367.242521631644,
+      "rest_expected": 372.22909062540754
+     },
+     "starts": {
+      "low_observed": 2.906282722513089,
+      "low_expected": 2.9402300778789217,
+      "rest_observed": 2.9517923362175527,
+      "rest_expected": 2.9675497086286375
+     }
+    },
+    "9": {
+     "cutoff_bits": 1.974937501,
+     "share_of_windows": 0.04583666933546837,
+     "share_of_digits": 0.2006,
+     "stack_2-30": {
+      "low_observed": 11.530408773678964,
+      "low_expected": 11.37498374334703,
+      "rest_observed": 11.857142857142858,
+      "rest_expected": 11.730402088871733
+     },
+     "stack_1-100": {
+      "low_observed": 38.17497507477567,
+      "low_expected": 38.51092908070606,
+      "rest_observed": 39.070177633224915,
+      "rest_expected": 39.58093747839635
+     },
+     "stack_101-1000": {
+      "low_observed": 325.9027916251246,
+      "low_expected": 330.34727481868504,
+      "rest_observed": 328.78871653740305,
+      "rest_expected": 333.638457506605
+     },
+     "stack_1-1000": {
+      "low_observed": 364.0777666999003,
+      "low_expected": 368.85820389938937,
+      "rest_observed": 367.858894170628,
+      "rest_expected": 373.2193949849998
+     },
+     "starts": {
+      "low_observed": 2.8489531405782653,
+      "low_expected": 2.890694024559479,
+      "rest_observed": 2.966725043782837,
+      "rest_expected": 2.9803082784948836
+     }
+    },
+    "10": {
+     "cutoff_bits": 2.046439345,
+     "share_of_windows": 0.04073666299669703,
+     "share_of_digits": 0.1769,
+     "stack_2-30": {
+      "low_observed": 11.442057659694743,
+      "low_expected": 11.364368955833264,
+      "rest_observed": 11.866723362896368,
+      "rest_expected": 11.722449642172972
+     },
+     "stack_1-100": {
+      "low_observed": 38.118145845110234,
+      "low_expected": 38.519484580888445,
+      "rest_observed": 39.056615235086866,
+      "rest_expected": 39.54828935908215
+     },
+     "stack_101-1000": {
+      "low_observed": 328.60655737704917,
+      "low_expected": 334.46234796365366,
+      "rest_observed": 328.12452921880697,
+      "rest_expected": 332.6592842967293
+     },
+     "stack_1-1000": {
+      "low_observed": 366.7247032221594,
+      "low_expected": 372.98183254454045,
+      "rest_observed": 367.1811444538938,
+      "rest_expected": 372.2075736558099
+     },
+     "starts": {
+      "low_observed": 2.8948558507631432,
+      "low_expected": 2.920059788650756,
+      "rest_observed": 2.9534685943384766,
+      "rest_expected": 2.9714166960796047
+     }
+    },
+    "12": {
+     "cutoff_bits": 2.229573959,
+     "share_of_windows": 0.048653518870757834,
+     "share_of_digits": 0.2182,
+     "stack_2-30": {
+      "low_observed": 11.611365719523373,
+      "low_expected": 11.525335668741745,
+      "rest_observed": 11.841903300076746,
+      "rest_expected": 11.696440171194714
+     },
+     "stack_1-100": {
+      "low_observed": 38.313473877176904,
+      "low_expected": 38.88569051733466,
+      "rest_observed": 39.05167562036326,
+      "rest_expected": 39.50042993468567
+     },
+     "stack_101-1000": {
+      "low_observed": 327.95600366636114,
+      "low_expected": 333.6154523877956,
+      "rest_observed": 328.2806344333589,
+      "rest_expected": 332.8004023386943
+     },
+     "stack_1-1000": {
+      "low_observed": 366.269477543538,
+      "low_expected": 372.50114290512863,
+      "rest_observed": 367.33231005372215,
+      "rest_expected": 372.30083227337843
+     },
+     "starts": {
+      "low_observed": 2.853345554537122,
+      "low_expected": 2.91176795321297,
+      "rest_observed": 2.9681504221028394,
+      "rest_expected": 2.9764439649071006
+     }
+    },
+    "15": {
+     "cutoff_bits": 2.415922064,
+     "share_of_windows": 0.04235930302423393,
+     "share_of_digits": 0.2287,
+     "stack_2-30": {
+      "low_observed": 11.827284652383035,
+      "low_expected": 11.904546645780107,
+      "rest_observed": 11.78101905873201,
+      "rest_expected": 11.586328731841782
+     },
+     "stack_1-100": {
+      "low_observed": 39.004372540446,
+      "low_expected": 39.50970398679636,
+      "rest_observed": 38.85686503306106,
+      "rest_expected": 39.32377089594107
+     },
+     "stack_101-1000": {
+      "low_observed": 329.4403148229121,
+      "low_expected": 333.30833904340096,
+      "rest_observed": 327.8449371191495,
+      "rest_expected": 332.88036966184677
+     },
+     "stack_1-1000": {
+      "low_observed": 368.4446873633581,
+      "low_expected": 372.8180430301957,
+      "rest_observed": 366.7018021522106,
+      "rest_expected": 372.2041405577863
+     },
+     "starts": {
+      "low_observed": 2.910362920857018,
+      "low_expected": 2.9707834004502214,
+      "rest_observed": 2.952806949306366,
+      "rest_expected": 2.9598256132146714
+     }
+    },
+    "20": {
+     "cutoff_bits": 2.639353872,
+     "share_of_windows": 0.048993086865043584,
+     "share_of_digits": 0.274,
+     "stack_2-30": {
+      "low_observed": 11.662408759124087,
+      "low_expected": 11.631126530915044,
+      "rest_observed": 11.840358126721764,
+      "rest_expected": 11.669664599571288
+     },
+     "stack_1-100": {
+      "low_observed": 38.386496350364965,
+      "low_expected": 39.0558528211931,
+      "rest_observed": 39.08085399449036,
+      "rest_expected": 39.48345746668424
+     },
+     "stack_101-1000": {
+      "low_observed": 332.0697080291971,
+      "low_expected": 337.03438746527274,
+      "rest_observed": 326.7530303030303,
+      "rest_expected": 331.44741610733263
+     },
+     "stack_1-1000": {
+      "low_observed": 370.45620437956205,
+      "low_expected": 376.09024028646417,
+      "rest_observed": 365.8338842975207,
+      "rest_expected": 370.9308735740153
+     },
+     "starts": {
+      "low_observed": 2.9423357664233576,
+      "low_expected": 2.960482358406599,
+      "rest_observed": 2.943388429752066,
+      "rest_expected": 2.9630296046171263
+     }
+    },
+    "30": {
+     "cutoff_bits": 2.869042999,
+     "share_of_windows": 0.04984454919265871,
+     "share_of_digits": 0.3012,
+     "stack_2-30": {
+      "low_observed": 11.409362549800797,
+      "low_expected": 11.507012643827787,
+      "rest_observed": 11.956353749284487,
+      "rest_expected": 11.72466079055316
+     },
+     "stack_1-100": {
+      "low_observed": 38.352921646746346,
+      "low_expected": 39.0911678490652,
+      "rest_observed": 39.122352604464794,
+      "rest_expected": 39.48487984785523
+     },
+     "stack_101-1000": {
+      "low_observed": 332.8120849933599,
+      "low_expected": 336.8641157227327,
+      "rest_observed": 326.2261018889525,
+      "rest_expected": 331.303340875388
+     },
+     "stack_1-1000": {
+      "low_observed": 371.16500664010624,
+      "low_expected": 375.95528357179626,
+      "rest_observed": 365.3484544934173,
+      "rest_expected": 370.7882207232417
+     },
+     "starts": {
+      "low_observed": 2.8691899070385127,
+      "low_expected": 2.9247055318360404,
+      "rest_observed": 2.9749570692615914,
+      "rest_expected": 2.9785494461454296
+     }
+    },
+    "50": {
+     "cutoff_bits": 3.059033305,
+     "share_of_windows": 0.04984423676012461,
+     "share_of_digits": 0.3182,
+     "stack_2-30": {
+      "low_observed": 11.44186046511628,
+      "low_expected": 11.557620118377466,
+      "rest_observed": 11.95482546201232,
+      "rest_expected": 11.706468828236678
+     },
+     "stack_1-100": {
+      "low_observed": 38.9776869893149,
+      "low_expected": 39.26187371958041,
+      "rest_observed": 38.84995599882664,
+      "rest_expected": 39.41502724589204
+     },
+     "stack_101-1000": {
+      "low_observed": 336.57636706473915,
+      "low_expected": 342.4843314893565,
+      "rest_observed": 324.3050748019947,
+      "rest_expected": 328.54170134862864
+     },
+     "stack_1-1000": {
+      "low_observed": 375.55405405405406,
+      "low_expected": 381.74620520893535,
+      "rest_observed": 363.15503080082135,
+      "rest_expected": 367.956728594519
+     },
+     "starts": {
+      "low_observed": 2.9767441860465116,
+      "low_expected": 2.9828888851142117,
+      "rest_observed": 2.927398063948372,
+      "rest_expected": 2.9527374830039586
+     }
+    }
+   }
+  }
+ }
+}
